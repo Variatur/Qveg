@@ -1,0 +1,380 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <customproperties/>
+    <layer-tree-layer legend_exp="" legend_split_behavior="0" patch_size="-1,-1" source=" bbox='1.60997e+07,-3.04282e+06,1.6168e+07,-2.99034e+06' crs='EPSG:3857' filter='' url='https://gisservices.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/12'" id="Properties_b1413f2f_2662_44d7_b33d_b1e43e4add90" providerKey="arcgisfeatureserver" expanded="1" checked="Qt::Checked" name="Properties">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer simplifyDrawingTol="1" autoRefreshTime="0" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" readOnly="0" labelsEnabled="1" simplifyDrawingHints="1" refreshOnNotifyMessage="" type="vector" wkbType="MultiPolygon" simplifyMaxScale="1" geometry="Polygon" maxScale="0" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" styleCategories="AllStyleCategories" simplifyLocal="1" minScale="100000000">
+      <extent>
+        <xmin>16099700</xmin>
+        <ymin>-3042820</ymin>
+        <xmax>16168000</xmax>
+        <ymax>-2990340</ymax>
+      </extent>
+      <id>Properties_b1413f2f_2662_44d7_b33d_b1e43e4add90</id>
+      <datasource> bbox='1.60997e+07,-3.04282e+06,1.6168e+07,-2.99034e+06' crs='EPSG:3857' filter='' url='https://gisservices.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/12'</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Properties</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 85°S to 85°N"],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo-Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier>https://gisservices.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/12</identifier>
+        <parentidentifier>https://gisservices.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/1</parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title>Properties</title>
+        <abstract>This dataset shows the extent and name of Rural Properties within the State of Queensland. The data has been compiled from numerous sources to produce a state wide coverage with the boundaries aligned to the Queensland Digital Cadastral Database (DCDB). Attributes within the data describe the date of extraction from the DCDB and the source for the extent and name of the property.Source data has been obtained from:• Queensland Department of Agriculture, Fisheries and Forestry• Queensland Digital Cadastral Database• Queensland Rural Valuations Project• Quensland Government and Geoscience Australia Field Checking• Advice from property owners and departmental regional staff </abstract>
+        <links>
+          <link url="https://gisservices.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/12" format="" mimeType="" size="" type="WWW:LINK" description="" name="Source"/>
+        </links>
+        <fees></fees>
+        <rights>© State of Queensland (Department of Natural Resources and Mines), 2016</rights>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 85°S to 85°N"],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+            <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+            <srsid>3857</srsid>
+            <srid>3857</srid>
+            <authid>EPSG:3857</authid>
+            <description>WGS 84 / Pseudo-Mercator</description>
+            <projectionacronym>merc</projectionacronym>
+            <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="-1199127.77172332070767879" minz="0" miny="-3398293.22925373259931803" maxz="0" minx="15361493.74673666805028915" dimensions="2" maxx="17082641.62525176256895065" crs="EPSG:3857"/>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="">arcgisfeatureserver</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <temporal enabled="0" startField="" durationUnit="min" accumulate="0" mode="0" startExpression="" fixedDuration="0" endExpression="" durationField="" endField="">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 enableorderby="0" symbollevels="0" forceraster="0" type="singleSymbol">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0" force_rhr="0">
+            <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="0,0,0,0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="255,211,127,127"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="2"/>
+              <prop k="outline_width_unit" v="Point"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <labeling type="rule-based">
+        <rules key="{4dda9066-8d07-47f0-98f9-857f2b0822d5}">
+          <settings calloutType="simple">
+            <text-style fontSizeUnit="Point" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSize="10" namedStyle="" textColor="0,0,0,255" textOpacity="1" useSubstitutions="0" previewBkgrdColor="255,255,255,255" fontLetterSpacing="0" textOrientation="horizontal" fontKerning="1" fontItalic="0" allowHtml="0" fieldName="" fontStrikeout="0" blendMode="0" fontWeight="50" fontUnderline="0" fontWordSpacing="0" fontCapitals="0" isExpression="0" multilineHeight="1" fontFamily="Ubuntu">
+              <text-buffer bufferColor="255,255,255,255" bufferSizeUnits="MM" bufferBlendMode="0" bufferDraw="0" bufferSize="1" bufferOpacity="1" bufferNoFill="1" bufferJoinStyle="128" bufferSizeMapUnitScale="3x:0,0,0,0,0,0"/>
+              <text-mask maskedSymbolLayers="" maskEnabled="0" maskJoinStyle="128" maskType="0" maskSize="1.5" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSizeUnits="MM"/>
+              <background shapeOffsetUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeType="0" shapeBorderColor="128,128,128,255" shapeOffsetY="0" shapeSizeUnit="MM" shapeRadiiY="0" shapeRotationType="0" shapeDraw="0" shapeSizeY="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeBorderWidth="0" shapeBorderWidthUnit="MM" shapeBlendMode="0" shapeSizeX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRotation="0" shapeFillColor="255,255,255,255" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSVGFile="" shapeSizeType="0" shapeRadiiUnit="MM" shapeOpacity="1"/>
+              <shadow shadowRadiusAlphaOnly="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="1.5" shadowDraw="0" shadowBlendMode="6" shadowRadiusUnit="MM" shadowOffsetAngle="135" shadowScale="100" shadowOpacity="0.7" shadowOffsetUnit="MM" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowColor="0,0,0,255" shadowOffsetGlobal="1" shadowUnder="0" shadowOffsetDist="1"/>
+              <dd_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </dd_properties>
+              <substitutions/>
+            </text-style>
+            <text-format reverseDirectionSymbol="0" wrapChar="" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" leftDirectionSymbol="&lt;" decimals="3" multilineAlign="3" rightDirectionSymbol=">" autoWrapLength="0" addDirectionSymbol="0" formatNumbers="0" plussign="0"/>
+            <placement polygonPlacementFlags="2" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" repeatDistance="0" geometryGenerator="" placement="0" priority="5" layerType="UnknownGeometry" rotationAngle="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorEnabled="0" yOffset="0" geometryGeneratorType="PointGeometry" fitInPolygonOnly="0" overrunDistance="0" quadOffset="4" repeatDistanceUnits="MM" offsetUnits="MM" offsetType="0" maxCurvedCharAngleIn="25" maxCurvedCharAngleOut="-25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" xOffset="0" distUnits="MM" placementFlags="10" overrunDistanceUnit="MM" preserveRotation="1" centroidWhole="0" distMapUnitScale="3x:0,0,0,0,0,0" dist="0"/>
+            <rendering minFeatureSize="0" fontMinPixelSize="0" scaleMax="0" obstacleFactor="1" labelPerPart="0" obstacle="1" scaleVisibility="0" mergeLines="0" drawLabels="1" scaleMin="0" displayAll="0" zIndex="0" obstacleType="1" limitNumLabels="0" maxNumLabels="2000" upsidedownLabels="0" fontLimitPixelSize="0" fontMaxPixelSize="10000"/>
+            <dd_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </dd_properties>
+            <callout type="simple">
+              <Option type="Map">
+                <Option value="pole_of_inaccessibility" type="QString" name="anchorPoint"/>
+                <Option type="Map" name="ddProperties">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+                <Option value="false" type="bool" name="drawToAllParts"/>
+                <Option value="0" type="QString" name="enabled"/>
+                <Option value="point_on_exterior" type="QString" name="labelAnchorPoint"/>
+                <Option value="&lt;symbol alpha=&quot;1&quot; clip_to_extent=&quot;1&quot; type=&quot;line&quot; name=&quot;symbol&quot; force_rhr=&quot;0&quot;>&lt;layer enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot; pass=&quot;0&quot;>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; type=&quot;QString&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; type=&quot;QString&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" type="QString" name="lineSymbol"/>
+                <Option value="0" type="double" name="minLength"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="minLengthMapUnitScale"/>
+                <Option value="MM" type="QString" name="minLengthUnit"/>
+                <Option value="0" type="double" name="offsetFromAnchor"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offsetFromAnchorMapUnitScale"/>
+                <Option value="MM" type="QString" name="offsetFromAnchorUnit"/>
+                <Option value="0" type="double" name="offsetFromLabel"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offsetFromLabelMapUnitScale"/>
+                <Option value="MM" type="QString" name="offsetFromLabelUnit"/>
+              </Option>
+            </callout>
+          </settings>
+          <rule key="{9bd68c15-aba6-4665-85da-005653fefe0d}" description="ASF label 1">
+            <settings calloutType="simple">
+              <text-style fontSizeUnit="Point" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSize="9" namedStyle="" textColor="255,255,190,255" textOpacity="1" useSubstitutions="0" previewBkgrdColor="255,255,255,255" fontLetterSpacing="0" textOrientation="horizontal" fontKerning="1" fontItalic="0" allowHtml="0" fieldName="&quot;NAME&quot;" fontStrikeout="0" blendMode="0" fontWeight="75" fontUnderline="0" fontWordSpacing="0" fontCapitals="0" isExpression="1" multilineHeight="1" fontFamily="Verdana">
+                <text-buffer bufferColor="115,178,115,127" bufferSizeUnits="Point" bufferBlendMode="0" bufferDraw="1" bufferSize="1.2" bufferOpacity="1" bufferNoFill="1" bufferJoinStyle="128" bufferSizeMapUnitScale="3x:0,0,0,0,0,0"/>
+                <text-mask maskedSymbolLayers="" maskEnabled="0" maskJoinStyle="128" maskType="0" maskSize="1.5" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSizeUnits="MM"/>
+                <background shapeOffsetUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeType="0" shapeBorderColor="128,128,128,255" shapeOffsetY="0" shapeSizeUnit="MM" shapeRadiiY="0" shapeRotationType="0" shapeDraw="0" shapeSizeY="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeBorderWidth="0" shapeBorderWidthUnit="MM" shapeBlendMode="0" shapeSizeX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRotation="0" shapeFillColor="255,255,255,255" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSVGFile="" shapeSizeType="0" shapeRadiiUnit="MM" shapeOpacity="1"/>
+                <shadow shadowRadiusAlphaOnly="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="1.5" shadowDraw="0" shadowBlendMode="6" shadowRadiusUnit="MM" shadowOffsetAngle="135" shadowScale="100" shadowOpacity="0.7" shadowOffsetUnit="MM" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowColor="0,0,0,255" shadowOffsetGlobal="1" shadowUnder="0" shadowOffsetDist="1"/>
+                <dd_properties>
+                  <Option type="Map">
+                    <Option value="" type="QString" name="name"/>
+                    <Option name="properties"/>
+                    <Option value="collection" type="QString" name="type"/>
+                  </Option>
+                </dd_properties>
+                <substitutions/>
+              </text-style>
+              <text-format reverseDirectionSymbol="0" wrapChar="" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" leftDirectionSymbol="&lt;" decimals="3" multilineAlign="3" rightDirectionSymbol=">" autoWrapLength="0" addDirectionSymbol="0" formatNumbers="0" plussign="0"/>
+              <placement polygonPlacementFlags="2" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" repeatDistance="0" geometryGenerator="" placement="4" priority="5" layerType="UnknownGeometry" rotationAngle="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorEnabled="0" yOffset="0" geometryGeneratorType="PointGeometry" fitInPolygonOnly="0" overrunDistance="0" quadOffset="4" repeatDistanceUnits="MM" offsetUnits="MM" offsetType="0" maxCurvedCharAngleIn="25" maxCurvedCharAngleOut="-25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" xOffset="0" distUnits="MM" placementFlags="10" overrunDistanceUnit="MM" preserveRotation="1" centroidWhole="0" distMapUnitScale="3x:0,0,0,0,0,0" dist="0"/>
+              <rendering minFeatureSize="0" fontMinPixelSize="0" scaleMax="0" obstacleFactor="1" labelPerPart="0" obstacle="1" scaleVisibility="0" mergeLines="0" drawLabels="1" scaleMin="0" displayAll="0" zIndex="0" obstacleType="1" limitNumLabels="0" maxNumLabels="2000" upsidedownLabels="0" fontLimitPixelSize="0" fontMaxPixelSize="10000"/>
+              <dd_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </dd_properties>
+              <callout type="simple">
+                <Option type="Map">
+                  <Option value="pole_of_inaccessibility" type="QString" name="anchorPoint"/>
+                  <Option type="Map" name="ddProperties">
+                    <Option value="" type="QString" name="name"/>
+                    <Option name="properties"/>
+                    <Option value="collection" type="QString" name="type"/>
+                  </Option>
+                  <Option value="false" type="bool" name="drawToAllParts"/>
+                  <Option value="0" type="QString" name="enabled"/>
+                  <Option value="point_on_exterior" type="QString" name="labelAnchorPoint"/>
+                  <Option value="&lt;symbol alpha=&quot;1&quot; clip_to_extent=&quot;1&quot; type=&quot;line&quot; name=&quot;symbol&quot; force_rhr=&quot;0&quot;>&lt;layer enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot; pass=&quot;0&quot;>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; type=&quot;QString&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; type=&quot;QString&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" type="QString" name="lineSymbol"/>
+                  <Option value="0" type="double" name="minLength"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="minLengthMapUnitScale"/>
+                  <Option value="MM" type="QString" name="minLengthUnit"/>
+                  <Option value="0" type="double" name="offsetFromAnchor"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="offsetFromAnchorMapUnitScale"/>
+                  <Option value="MM" type="QString" name="offsetFromAnchorUnit"/>
+                  <Option value="0" type="double" name="offsetFromLabel"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="offsetFromLabelMapUnitScale"/>
+                  <Option value="MM" type="QString" name="offsetFromLabelUnit"/>
+                </Option>
+              </callout>
+            </settings>
+          </rule>
+        </rules>
+      </labeling>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks type="StringList">
+          <Option value="" type="QString"/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <referencedLayers/>
+      <referencingLayers/>
+      <fieldConfiguration>
+        <field name="OBJECTID">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FEATURETYPE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FEATURERELIABILITY">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FEATURESOURCE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ATTRIBUTERELIABILITY">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ATTRIBUTESOURCE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LOCALGOVERNMENT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="COMMENT_">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PROPERTYAREA">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="OBJECTID" index="0" name=""/>
+        <alias field="FEATURETYPE" index="1" name=""/>
+        <alias field="NAME" index="2" name=""/>
+        <alias field="FEATURERELIABILITY" index="3" name=""/>
+        <alias field="FEATURESOURCE" index="4" name=""/>
+        <alias field="ATTRIBUTERELIABILITY" index="5" name=""/>
+        <alias field="ATTRIBUTESOURCE" index="6" name=""/>
+        <alias field="LOCALGOVERNMENT" index="7" name=""/>
+        <alias field="COMMENT_" index="8" name=""/>
+        <alias field="PROPERTYAREA" index="9" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" field="OBJECTID" applyOnUpdate="0"/>
+        <default expression="" field="FEATURETYPE" applyOnUpdate="0"/>
+        <default expression="" field="NAME" applyOnUpdate="0"/>
+        <default expression="" field="FEATURERELIABILITY" applyOnUpdate="0"/>
+        <default expression="" field="FEATURESOURCE" applyOnUpdate="0"/>
+        <default expression="" field="ATTRIBUTERELIABILITY" applyOnUpdate="0"/>
+        <default expression="" field="ATTRIBUTESOURCE" applyOnUpdate="0"/>
+        <default expression="" field="LOCALGOVERNMENT" applyOnUpdate="0"/>
+        <default expression="" field="COMMENT_" applyOnUpdate="0"/>
+        <default expression="" field="PROPERTYAREA" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint notnull_strength="1" exp_strength="0" field="OBJECTID" constraints="3" unique_strength="1"/>
+        <constraint notnull_strength="0" exp_strength="0" field="FEATURETYPE" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="NAME" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="FEATURERELIABILITY" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="FEATURESOURCE" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="ATTRIBUTERELIABILITY" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="ATTRIBUTESOURCE" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="LOCALGOVERNMENT" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="COMMENT_" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="PROPERTYAREA" constraints="0" unique_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="OBJECTID"/>
+        <constraint desc="" exp="" field="FEATURETYPE"/>
+        <constraint desc="" exp="" field="NAME"/>
+        <constraint desc="" exp="" field="FEATURERELIABILITY"/>
+        <constraint desc="" exp="" field="FEATURESOURCE"/>
+        <constraint desc="" exp="" field="ATTRIBUTERELIABILITY"/>
+        <constraint desc="" exp="" field="ATTRIBUTESOURCE"/>
+        <constraint desc="" exp="" field="LOCALGOVERNMENT"/>
+        <constraint desc="" exp="" field="COMMENT_"/>
+        <constraint desc="" exp="" field="PROPERTYAREA"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </maplayers>
+</qlr>

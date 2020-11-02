@@ -1,0 +1,118 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <customproperties/>
+    <layer-tree-layer source=" crs='EPSG:3857' format='PNG32' layer='3' url='https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'" legend_exp="" checked="Qt::Checked" expanded="1" name="High Resolution 30cm Imagery" id="High_Resolution_30cm_Imagery_0702805c_1f2c_4bd6_805e_0e28179e34b4" providerKey="arcgismapserver">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer autoRefreshTime="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories" minScale="1e+08" autoRefreshEnabled="0" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" type="raster" maxScale="0">
+      <extent>
+        <xmin>-19949452.88620470836758614</xmin>
+        <ymin>-7031552.09777941461652517</ymin>
+        <xmax>19879259.98365180939435959</xmax>
+        <ymax>11556089.87439889274537563</ymax>
+      </extent>
+      <id>High_Resolution_30cm_Imagery_0702805c_1f2c_4bd6_805e_0e28179e34b4</id>
+      <datasource> crs='EPSG:3857' format='PNG32' layer='3' url='https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <timestamp>2020-05-20T19:01:56</timestamp>
+      <layername>High Resolution 30cm Imagery</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 85°S to 85°N"],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo-Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier>https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/3</identifier>
+        <parentidentifier>https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer</parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title>High Resolution 30cm Imagery</title>
+        <abstract>World Imagery provides one meter or better satellite and aerial imagery in many parts of the world and lower resolution satellite imagery worldwide. The map includes 15m TerraColor imagery at small and mid-scales (591M down to 72k) and 2.5m SPOT Imagery (288k to 72k) for the world, and USGS 15m Landsat imagery for Antarctica. The map features 0.3m resolution imagery in the continental United States and 0.6m resolution imagery in parts of Western Europe from Digital Globe. Recent 1m USDA NAIP imagery is available in select states of the US. In other parts of the world, 1 meter resolution imagery is available from GeoEye IKONOS, AeroGRID, and IGN Spain. Additionally, imagery at different resolutions has been contributed by the GIS User Community. For more information on this map, including the terms of use, visit us online at http://goto.arcgisonline.com/maps/World_Imagery</abstract>
+        <keywords vocabulary="gmd:topicCategory">
+          <keyword>imageryBaseMapsEarthCover (Imagery, basemaps, and land cover)</keyword>
+        </keywords>
+        <keywords vocabulary="keywords">
+          <keyword>World</keyword>
+          <keyword>Global</keyword>
+          <keyword>United States</keyword>
+        </keywords>
+        <contact>
+          <name>Esri</name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role>author</role>
+        </contact>
+        <links>
+          <link format="" url="https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/3" description="" name="Source" type="WWW:LINK" mimeType="" size=""/>
+        </links>
+        <fees></fees>
+        <rights>Sources: Esri, DigitalGlobe, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community</rights>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 85°S to 85°N"],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+            <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+            <srsid>3857</srsid>
+            <srid>3857</srid>
+            <authid>EPSG:3857</authid>
+            <description>WGS 84 / Pseudo-Mercator</description>
+            <projectionacronym>merc</projectionacronym>
+            <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial minx="-19949452.88620470836758614" miny="-7031552.09777941461652517" crs="EPSG:3857" maxz="0" minz="0" dimensions="2" maxy="11556089.87439889274537563" maxx="19879259.98365180939435959"/>
+        </extent>
+      </resourceMetadata>
+      <provider>arcgismapserver</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <customproperties>
+        <property value="Feature" key="identify/format"/>
+      </customproperties>
+      <pipe>
+        <rasterrenderer opacity="1" band="1" alphaBand="-1" type="singlebandcolordata" nodataColor="">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" brightness="0"/>
+        <huesaturation saturation="0" colorizeBlue="128" colorizeStrength="100" colorizeOn="0" grayscaleMode="0" colorizeGreen="128" colorizeRed="255"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+  </maplayers>
+</qlr>

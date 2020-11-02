@@ -1,0 +1,190 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group checked="Qt::Checked" name="" expanded="1">
+    <customproperties/>
+    <layer-tree-layer source=" bbox='1.70068e+07,-3.17405e+06,1.70146e+07,-3.17022e+06' crs='EPSG:3857' filter='' url='https://gisservices.information.qld.gov.au/arcgis/rest/services/Environment/KoalaPlan/MapServer/0' table=&quot;&quot; sql=" providerKey="arcgisfeatureserver" legend_exp="" checked="Qt::Checked" name="South East Queensland koala protection area" id="South_East_Queensland_koala_protection_area_8a2dd730_3488_4318_be20_b058d5701a26" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer maxScale="0" readOnly="0" type="vector" refreshOnNotifyEnabled="0" simplifyDrawingHints="1" autoRefreshTime="0" simplifyDrawingTol="1" simplifyMaxScale="1" minScale="1e+08" refreshOnNotifyMessage="" labelsEnabled="0" styleCategories="AllStyleCategories" simplifyAlgorithm="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" wkbType="MultiPolygon" geometry="Polygon">
+      <extent>
+        <xmin>17006800</xmin>
+        <ymin>-3174050</ymin>
+        <xmax>17014600</xmax>
+        <ymax>-3170220</ymax>
+      </extent>
+      <id>South_East_Queensland_koala_protection_area_8a2dd730_3488_4318_be20_b058d5701a26</id>
+      <datasource> bbox='1.70068e+07,-3.17405e+06,1.70146e+07,-3.17022e+06' crs='EPSG:3857' filter='' url='https://gisservices.information.qld.gov.au/arcgis/rest/services/Environment/KoalaPlan/MapServer/0' table="" sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>South East Queensland koala protection area</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCS["WGS 84 / Pseudo-Mercator",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Mercator_1SP"],PARAMETER["central_meridian",0],PARAMETER["scale_factor",1],PARAMETER["false_easting",0],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["X",EAST],AXIS["Y",NORTH],EXTENSION["PROJ4","+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs"],AUTHORITY["EPSG","3857"]]</wkt>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo-Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier>https://gisservices.information.qld.gov.au/arcgis/rest/services/Environment/KoalaPlan/MapServer/0</identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title>South East Queensland koala protection area</title>
+        <abstract>The South East Queensland Koala Protection Area (SEQKPA) is defined by the following local government areas: - Sunshine Coast Regional Council - Moreton Bay Regional Council - Brisbane City Council - Redland City Council - Logan City Council - Ipswich City Council - Gold Coast City Council The Local Government Boundaries Dataset is the spatial representation of the Local Government areas of Queensland after the amalgamation on the 15th March 2008. Based on the January 2010 edition of the QLD Digital Cadastral Database (DCDB). </abstract>
+        <links>
+          <link description="" format="" mimeType="" type="WWW:LINK" url="https://gisservices.information.qld.gov.au/arcgis/rest/services/Environment/KoalaPlan/MapServer/0" name="Source" size=""/>
+        </links>
+        <fees></fees>
+        <rights>© State of Queensland (Department of Environment and Science), 2020.</rights>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt>PROJCS["WGS 84 / Pseudo-Mercator",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Mercator_1SP"],PARAMETER["central_meridian",0],PARAMETER["scale_factor",1],PARAMETER["false_easting",0],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["X",EAST],AXIS["Y",NORTH],EXTENSION["PROJ4","+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs"],AUTHORITY["EPSG","3857"]]</wkt>
+            <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+            <srsid>3857</srsid>
+            <srid>3857</srid>
+            <authid>EPSG:3857</authid>
+            <description>WGS 84 / Pseudo-Mercator</description>
+            <projectionacronym>merc</projectionacronym>
+            <ellipsoidacronym>WGS84</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial minz="0" crs="EPSG:3857" maxy="-3016073.87725436128675938" maxz="0" miny="-3282449.49132594792172313" dimensions="2" maxx="17093313.70783732831478119" minx="16963174.31015961244702339"/>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="">arcgisfeatureserver</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" type="fill" name="0" clip_to_extent="1" force_rhr="0">
+            <layer class="SimpleFill" enabled="1" locked="0" pass="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="0,0,0,0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="255,85,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="2"/>
+              <prop k="outline_width_unit" v="Point"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="OBJECTID">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="REGION">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="AREAHA">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="OBJECTID" index="0" name=""/>
+        <alias field="REGION" index="1" name=""/>
+        <alias field="AREAHA" index="2" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="OBJECTID" applyOnUpdate="0" expression=""/>
+        <default field="REGION" applyOnUpdate="0" expression=""/>
+        <default field="AREAHA" applyOnUpdate="0" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint constraints="3" field="OBJECTID" notnull_strength="1" exp_strength="0" unique_strength="1"/>
+        <constraint constraints="0" field="REGION" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="AREAHA" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" field="OBJECTID" desc=""/>
+        <constraint exp="" field="REGION" desc=""/>
+        <constraint exp="" field="AREAHA" desc=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </maplayers>
+</qlr>

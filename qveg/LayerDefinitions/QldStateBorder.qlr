@@ -1,0 +1,360 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group checked="Qt::Checked" name="" expanded="1">
+    <customproperties/>
+    <layer-tree-layer source=" crs='EPSG:3857' filter='' url='https://gisservices.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/17' table=&quot;&quot; sql=" providerKey="arcgisfeatureserver" legend_exp="" checked="Qt::Checked" name="Queensland Border" id="Queensland_Border_f7d4f0b6_59c7_43be_b055_35d7d423b782" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer maxScale="0" readOnly="0" type="vector" refreshOnNotifyEnabled="0" simplifyDrawingHints="1" autoRefreshTime="0" simplifyDrawingTol="1" simplifyMaxScale="1" minScale="1e+08" refreshOnNotifyMessage="" labelsEnabled="0" styleCategories="AllStyleCategories" simplifyAlgorithm="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" wkbType="MultiCurve" geometry="Line">
+      <extent>
+        <xmin>15361496.43118203245103359</xmin>
+        <ymin>-3398394.55508682131767273</ymin>
+        <xmax>17143319.85363393276929855</xmax>
+        <ymax>-1005853.85311232530511916</ymax>
+      </extent>
+      <id>Queensland_Border_f7d4f0b6_59c7_43be_b055_35d7d423b782</id>
+      <datasource> crs='EPSG:3857' filter='' url='https://gisservices.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/17' table="" sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Queensland Border</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCS["WGS 84 / Pseudo-Mercator",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Mercator_1SP"],PARAMETER["central_meridian",0],PARAMETER["scale_factor",1],PARAMETER["false_easting",0],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["X",EAST],AXIS["Y",NORTH],EXTENSION["PROJ4","+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs"],AUTHORITY["EPSG","3857"]]</wkt>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo-Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier>https://gisservices.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/17</identifier>
+        <parentidentifier>https://gisservices.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/14</parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title>Queensland Border</title>
+        <abstract>This dataset is a vector representation of Queenslands coastline, and State and Territory borders.</abstract>
+        <links>
+          <link description="" format="" mimeType="" type="WWW:LINK" url="https://gisservices.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/17" name="Source" size=""/>
+        </links>
+        <fees></fees>
+        <rights>© State of Queensland (Department of Natural Resources and Mines), 2016</rights>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt>PROJCS["WGS 84 / Pseudo-Mercator",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Mercator_1SP"],PARAMETER["central_meridian",0],PARAMETER["scale_factor",1],PARAMETER["false_easting",0],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["X",EAST],AXIS["Y",NORTH],EXTENSION["PROJ4","+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs"],AUTHORITY["EPSG","3857"]]</wkt>
+            <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+            <srsid>3857</srsid>
+            <srid>3857</srid>
+            <authid>EPSG:3857</authid>
+            <description>WGS 84 / Pseudo-Mercator</description>
+            <projectionacronym>merc</projectionacronym>
+            <ellipsoidacronym>WGS84</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial minz="0" crs="EPSG:3857" maxy="-1005853.85311232530511916" maxz="0" miny="-3398394.55508682131767273" dimensions="2" maxx="17143319.85363393276929855" minx="15361496.43118203245103359"/>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="">arcgisfeatureserver</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" type="line" name="0" clip_to_extent="1" force_rhr="0">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="0,0,0,255"/>
+              <prop k="line_style" v="dash dot"/>
+              <prop k="line_width" v="1.5"/>
+              <prop k="line_width_unit" v="Point"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="ring_filter" v="0"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="OBJECTID">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FEAT_CODE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="COAST_CODE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="STATE_CODE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="BORDER_CODE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Q_INFO">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="UFI">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="BORDER_DESC">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="STATE_DESC">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FEAT_REL">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ATT_REL">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PLAN_ACC">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ELEV_ACC">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MAPNO">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="EDITION">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="AUTHORITY">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="DESCRIPTION">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SHAPE.LEN">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="OBJECTID" index="0" name=""/>
+        <alias field="FEAT_CODE" index="1" name=""/>
+        <alias field="COAST_CODE" index="2" name=""/>
+        <alias field="STATE_CODE" index="3" name=""/>
+        <alias field="BORDER_CODE" index="4" name=""/>
+        <alias field="Q_INFO" index="5" name=""/>
+        <alias field="UFI" index="6" name=""/>
+        <alias field="BORDER_DESC" index="7" name=""/>
+        <alias field="STATE_DESC" index="8" name=""/>
+        <alias field="FEAT_REL" index="9" name=""/>
+        <alias field="ATT_REL" index="10" name=""/>
+        <alias field="PLAN_ACC" index="11" name=""/>
+        <alias field="ELEV_ACC" index="12" name=""/>
+        <alias field="MAPNO" index="13" name=""/>
+        <alias field="EDITION" index="14" name=""/>
+        <alias field="AUTHORITY" index="15" name=""/>
+        <alias field="DESCRIPTION" index="16" name=""/>
+        <alias field="SHAPE.LEN" index="17" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="OBJECTID" applyOnUpdate="0" expression=""/>
+        <default field="FEAT_CODE" applyOnUpdate="0" expression=""/>
+        <default field="COAST_CODE" applyOnUpdate="0" expression=""/>
+        <default field="STATE_CODE" applyOnUpdate="0" expression=""/>
+        <default field="BORDER_CODE" applyOnUpdate="0" expression=""/>
+        <default field="Q_INFO" applyOnUpdate="0" expression=""/>
+        <default field="UFI" applyOnUpdate="0" expression=""/>
+        <default field="BORDER_DESC" applyOnUpdate="0" expression=""/>
+        <default field="STATE_DESC" applyOnUpdate="0" expression=""/>
+        <default field="FEAT_REL" applyOnUpdate="0" expression=""/>
+        <default field="ATT_REL" applyOnUpdate="0" expression=""/>
+        <default field="PLAN_ACC" applyOnUpdate="0" expression=""/>
+        <default field="ELEV_ACC" applyOnUpdate="0" expression=""/>
+        <default field="MAPNO" applyOnUpdate="0" expression=""/>
+        <default field="EDITION" applyOnUpdate="0" expression=""/>
+        <default field="AUTHORITY" applyOnUpdate="0" expression=""/>
+        <default field="DESCRIPTION" applyOnUpdate="0" expression=""/>
+        <default field="SHAPE.LEN" applyOnUpdate="0" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint constraints="3" field="OBJECTID" notnull_strength="1" exp_strength="0" unique_strength="1"/>
+        <constraint constraints="0" field="FEAT_CODE" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="COAST_CODE" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="STATE_CODE" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="BORDER_CODE" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="Q_INFO" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="UFI" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="BORDER_DESC" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="STATE_DESC" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="FEAT_REL" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="ATT_REL" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="PLAN_ACC" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="ELEV_ACC" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="MAPNO" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="EDITION" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="AUTHORITY" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="DESCRIPTION" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+        <constraint constraints="0" field="SHAPE.LEN" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" field="OBJECTID" desc=""/>
+        <constraint exp="" field="FEAT_CODE" desc=""/>
+        <constraint exp="" field="COAST_CODE" desc=""/>
+        <constraint exp="" field="STATE_CODE" desc=""/>
+        <constraint exp="" field="BORDER_CODE" desc=""/>
+        <constraint exp="" field="Q_INFO" desc=""/>
+        <constraint exp="" field="UFI" desc=""/>
+        <constraint exp="" field="BORDER_DESC" desc=""/>
+        <constraint exp="" field="STATE_DESC" desc=""/>
+        <constraint exp="" field="FEAT_REL" desc=""/>
+        <constraint exp="" field="ATT_REL" desc=""/>
+        <constraint exp="" field="PLAN_ACC" desc=""/>
+        <constraint exp="" field="ELEV_ACC" desc=""/>
+        <constraint exp="" field="MAPNO" desc=""/>
+        <constraint exp="" field="EDITION" desc=""/>
+        <constraint exp="" field="AUTHORITY" desc=""/>
+        <constraint exp="" field="DESCRIPTION" desc=""/>
+        <constraint exp="" field="SHAPE.LEN" desc=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </maplayers>
+</qlr>

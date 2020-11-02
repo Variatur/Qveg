@@ -1,0 +1,244 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <customproperties/>
+    <layer-tree-layer legend_exp="" legend_split_behavior="0" patch_size="-1,-1" source=" crs='EPSG:4283' filter='' url='https://gisservices2.information.qld.gov.au/arcgis/rest/services/WetlandMaps/Map/MapServer/70'" id="Soil_case_studies_cccebe47_9cae_449a_91f3_d1106535b5a1" providerKey="arcgisfeatureserver" expanded="1" checked="Qt::Checked" name="Soil case studies">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer simplifyDrawingTol="1" autoRefreshTime="0" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" readOnly="0" labelsEnabled="0" simplifyDrawingHints="1" refreshOnNotifyMessage="" type="vector" wkbType="MultiPoint" simplifyMaxScale="1" geometry="Point" maxScale="0" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" styleCategories="AllStyleCategories" simplifyLocal="1" minScale="100000000">
+      <extent>
+        <xmin>139.84206040036801255</xmin>
+        <ymin>-28.9611519401091968</ymin>
+        <xmax>153.49777239997700917</xmax>
+        <ymax>-12.97831032985700084</ymax>
+      </extent>
+      <id>Soil_case_studies_cccebe47_9cae_449a_91f3_d1106535b5a1</id>
+      <datasource> crs='EPSG:4283' filter='' url='https://gisservices2.information.qld.gov.au/arcgis/rest/services/WetlandMaps/Map/MapServer/70'</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Soil case studies</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCRS["GDA94",DATUM["Geocentric Datum of Australia 1994",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["Australia - GDA"],BBOX[-60.56,93.41,-8.47,173.35]],ID["EPSG",4283]]</wkt>
+          <proj4>+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs</proj4>
+          <srsid>3415</srsid>
+          <srid>4283</srid>
+          <authid>EPSG:4283</authid>
+          <description>GDA94</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier>https://gisservices2.information.qld.gov.au/arcgis/rest/services/WetlandMaps/Map/MapServer/70</identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title>Soil case studies</title>
+        <abstract></abstract>
+        <links>
+          <link url="https://gisservices2.information.qld.gov.au/arcgis/rest/services/WetlandMaps/Map/MapServer/70" format="" mimeType="" size="" type="WWW:LINK" description="" name="Source"/>
+        </links>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt>GEOGCRS["GDA94",DATUM["Geocentric Datum of Australia 1994",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["Australia - GDA"],BBOX[-60.56,93.41,-8.47,173.35]],ID["EPSG",4283]]</wkt>
+            <proj4>+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs</proj4>
+            <srsid>3415</srsid>
+            <srid>4283</srid>
+            <authid>EPSG:4283</authid>
+            <description>GDA94</description>
+            <projectionacronym>longlat</projectionacronym>
+            <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+            <geographicflag>true</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="-12.97831032985700084" minz="0" miny="-28.9611519401091968" maxz="0" minx="139.84206040036801255" dimensions="2" maxx="153.49777239997700917" crs="EPSG:4283"/>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="">arcgisfeatureserver</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <temporal enabled="0" startField="" durationUnit="min" accumulate="0" mode="0" startExpression="" fixedDuration="0" endExpression="" durationField="" endField="">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 enableorderby="0" symbollevels="0" forceraster="0" type="singleSymbol">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="0" force_rhr="0">
+            <layer enabled="1" class="RasterMarker" locked="0" pass="0">
+              <prop k="alpha" v="1"/>
+              <prop k="angle" v="0"/>
+              <prop k="fixedAspectRatio" v="0"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="imageFile" v="base64:iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA2klEQVRIie3QwSpEYRgG4OcwOxcwqxmaWFDUZKHsmLKwtNMkCzfgDuynbN3C3IIizU6Ro7NR0xklU3IDykJ+Oxvk+DsWTt7dt/iet96aX0ytGvii1sW8xkssNvLwmMq3PsVXLdQP7DRj8X1H56n8/a7I5tXEr+Qyt9a1zaiXhx+7tOdQEEzpO9UzXaCgEH4iFQTw5NlAZtdGOfiyOX1nYEKibbbIWzF825oguDayacWSVnl4ItHV0dUphP4Ij80//j0+kCXB610sduN+8kt8aNwcGsfaH/J3N38DkqMwuDGD3OQAAAAASUVORK5CYII="/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="Point"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="17"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="Point"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks type="StringList">
+          <Option value="" type="QString"/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <referencedLayers/>
+      <referencingLayers/>
+      <fieldConfiguration>
+        <field name="NAME">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FULLNAME">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="URL">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="KML">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="L_URL">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="OBJECTID">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="L_KML">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="NAME" index="0" name=""/>
+        <alias field="FULLNAME" index="1" name=""/>
+        <alias field="URL" index="2" name=""/>
+        <alias field="KML" index="3" name=""/>
+        <alias field="L_URL" index="4" name=""/>
+        <alias field="OBJECTID" index="5" name=""/>
+        <alias field="L_KML" index="6" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" field="NAME" applyOnUpdate="0"/>
+        <default expression="" field="FULLNAME" applyOnUpdate="0"/>
+        <default expression="" field="URL" applyOnUpdate="0"/>
+        <default expression="" field="KML" applyOnUpdate="0"/>
+        <default expression="" field="L_URL" applyOnUpdate="0"/>
+        <default expression="" field="OBJECTID" applyOnUpdate="0"/>
+        <default expression="" field="L_KML" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint notnull_strength="0" exp_strength="0" field="NAME" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="FULLNAME" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="URL" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="KML" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="L_URL" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="1" exp_strength="0" field="OBJECTID" constraints="3" unique_strength="1"/>
+        <constraint notnull_strength="0" exp_strength="0" field="L_KML" constraints="0" unique_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="NAME"/>
+        <constraint desc="" exp="" field="FULLNAME"/>
+        <constraint desc="" exp="" field="URL"/>
+        <constraint desc="" exp="" field="KML"/>
+        <constraint desc="" exp="" field="L_URL"/>
+        <constraint desc="" exp="" field="OBJECTID"/>
+        <constraint desc="" exp="" field="L_KML"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </maplayers>
+</qlr>

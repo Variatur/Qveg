@@ -1,0 +1,114 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group checked="Qt::Checked" name="" expanded="1">
+    <customproperties/>
+    <layer-tree-layer source=" crs='EPSG:3857' format='PNG32' layer='0' url='https://gisservices.information.qld.gov.au/arcgis/rest/services/Basemaps/QldImageryLabel/MapServer' table=&quot;&quot; sql=" providerKey="arcgismapserver" legend_exp="" checked="Qt::Checked" name="QldImageryLabel" id="QldImageryLabel_f5959b86_a6d5_4a89_bb28_3443706f7634" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer refreshOnNotifyMessage="" styleCategories="AllStyleCategories" autoRefreshEnabled="0" minScale="1e+08" type="raster" refreshOnNotifyEnabled="0" hasScaleBasedVisibilityFlag="0" maxScale="0" autoRefreshTime="0">
+      <extent>
+        <xmin>15250770.21461373195052147</xmin>
+        <ymin>-3439440.08967988518998027</ymin>
+        <xmax>18145077.02577579393982887</xmax>
+        <ymax>-1006021.08937938511371613</ymax>
+      </extent>
+      <id>QldImageryLabel_f5959b86_a6d5_4a89_bb28_3443706f7634</id>
+      <datasource> crs='EPSG:3857' format='PNG32' layer='0' url='https://gisservices.information.qld.gov.au/arcgis/rest/services/Basemaps/QldImageryLabel/MapServer' table="" sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <timestamp>2020-04-26T12:12:21</timestamp>
+      <layername>QldImageryLabel</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCS["WGS 84 / Pseudo-Mercator",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Mercator_1SP"],PARAMETER["central_meridian",0],PARAMETER["scale_factor",1],PARAMETER["false_easting",0],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["X",EAST],AXIS["Y",NORTH],EXTENSION["PROJ4","+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs"],AUTHORITY["EPSG","3857"]]</wkt>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo-Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier>https://gisservices.information.qld.gov.au/arcgis/rest/services/Basemaps/QldImageryLabel/MapServer/0</identifier>
+        <parentidentifier>https://gisservices.information.qld.gov.au/arcgis/rest/services/Basemaps/QldImageryLabel/MapServer</parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title>QldImageryLabel</title>
+        <abstract></abstract>
+        <keywords vocabulary="keywords">
+          <keyword>QldImageryLabel</keyword>
+          <keyword>basemap</keyword>
+          <keyword>map base</keyword>
+        </keywords>
+        <contact>
+          <name>Mapping Solutions, Spatial Data &amp; Mapping, Land &amp; Spatial Information</name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role>author</role>
+        </contact>
+        <links>
+          <link description="" format="" mimeType="" type="WWW:LINK" url="https://gisservices.information.qld.gov.au/arcgis/rest/services/Basemaps/QldImageryLabel/MapServer/0" name="Source" size=""/>
+        </links>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt>PROJCS["WGS 84 / Pseudo-Mercator",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Mercator_1SP"],PARAMETER["central_meridian",0],PARAMETER["scale_factor",1],PARAMETER["false_easting",0],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["X",EAST],AXIS["Y",NORTH],EXTENSION["PROJ4","+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs"],AUTHORITY["EPSG","3857"]]</wkt>
+            <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+            <srsid>3857</srsid>
+            <srid>3857</srid>
+            <authid>EPSG:3857</authid>
+            <description>WGS 84 / Pseudo-Mercator</description>
+            <projectionacronym>merc</projectionacronym>
+            <ellipsoidacronym>WGS84</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial minz="0" crs="EPSG:3857" maxy="-1006021.08937938511371613" maxz="0" miny="-3439440.08967988518998027" dimensions="2" maxx="18145077.02577579393982887" minx="15250770.21461373195052147"/>
+        </extent>
+      </resourceMetadata>
+      <provider>arcgismapserver</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <customproperties>
+        <property key="identify/format" value="Feature"/>
+      </customproperties>
+      <pipe>
+        <rasterrenderer type="singlebandcolordata" band="1" opacity="1" alphaBand="-1">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeStrength="100" colorizeGreen="128" colorizeOn="0" colorizeRed="255" grayscaleMode="0" saturation="0" colorizeBlue="128"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+  </maplayers>
+</qlr>

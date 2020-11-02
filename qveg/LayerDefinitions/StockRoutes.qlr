@@ -1,0 +1,591 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <customproperties/>
+    <layer-tree-layer legend_exp="" legend_split_behavior="0" patch_size="-1,-1" source=" crs='EPSG:4283' filter='' url='https://gisservices2.information.qld.gov.au/arcgis/rest/services/SRMS/SRMS_Base_Map/MapServer/23'" id="Stock_Routes__All___Search__005230e5_b4c6_429d_a040_77bfbef2a3bd" providerKey="arcgisfeatureserver" expanded="1" checked="Qt::Checked" name="Stock Routes (All - Search)">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer simplifyDrawingTol="1" autoRefreshTime="0" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" readOnly="0" labelsEnabled="0" simplifyDrawingHints="1" refreshOnNotifyMessage="" type="vector" wkbType="MultiPolygon" simplifyMaxScale="1" geometry="Polygon" maxScale="0" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" styleCategories="AllStyleCategories" simplifyLocal="1" minScale="100000000">
+      <extent>
+        <xmin>137.97797815999999216</xmin>
+        <ymin>-29.1757584360000024</ymin>
+        <xmax>153.52970925700000748</xmax>
+        <ymax>-10.70783274600000112</ymax>
+      </extent>
+      <id>Stock_Routes__All___Search__005230e5_b4c6_429d_a040_77bfbef2a3bd</id>
+      <datasource> crs='EPSG:4283' filter='' url='https://gisservices2.information.qld.gov.au/arcgis/rest/services/SRMS/SRMS_Base_Map/MapServer/23'</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Stock Routes (All - Search)</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCRS["GDA94",DATUM["Geocentric Datum of Australia 1994",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["Australia - GDA"],BBOX[-60.56,93.41,-8.47,173.35]],ID["EPSG",4283]]</wkt>
+          <proj4>+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs</proj4>
+          <srsid>3415</srsid>
+          <srid>4283</srid>
+          <authid>EPSG:4283</authid>
+          <description>GDA94</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier>https://gisservices2.information.qld.gov.au/arcgis/rest/services/SRMS/SRMS_Base_Map/MapServer/23</identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title>Stock Routes (All - Search)</title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links>
+          <link url="https://gisservices2.information.qld.gov.au/arcgis/rest/services/SRMS/SRMS_Base_Map/MapServer/23" format="" mimeType="" size="" type="WWW:LINK" description="" name="Source"/>
+        </links>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt>GEOGCRS["GDA94",DATUM["Geocentric Datum of Australia 1994",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["Australia - GDA"],BBOX[-60.56,93.41,-8.47,173.35]],ID["EPSG",4283]]</wkt>
+            <proj4>+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs</proj4>
+            <srsid>3415</srsid>
+            <srid>4283</srid>
+            <authid>EPSG:4283</authid>
+            <description>GDA94</description>
+            <projectionacronym>longlat</projectionacronym>
+            <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+            <geographicflag>true</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="-10.70783274599999935" minz="0" miny="-29.17575843599999885" maxz="0" minx="137.97797815999999216" dimensions="2" maxx="153.52970925700000748" crs="EPSG:4283"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="">arcgisfeatureserver</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <temporal enabled="0" startField="" durationUnit="min" accumulate="0" mode="0" startExpression="" fixedDuration="0" endExpression="" durationField="" endField="">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 attr="TYPE" enableorderby="0" symbollevels="0" forceraster="0" type="categorizedSymbol">
+        <categories>
+          <category value="RE" render="true" label="Reserve" symbol="0"/>
+          <category value="RO" render="true" label="Road" symbol="1"/>
+          <category value="" render="true" label="" symbol="2"/>
+        </categories>
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0" force_rhr="0">
+            <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="247,5,58,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_unit" v="Point"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="1" force_rhr="0">
+            <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="8,67,12,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_unit" v="Point"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="2" force_rhr="0">
+            <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="207,154,108,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_unit" v="Point"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <source-symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0" force_rhr="0">
+            <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_unit" v="Point"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </source-symbol>
+        <colorramp type="randomcolors" name="[source]"/>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory scaleDependency="Area" maxScaleDenominator="1e+08" penColor="#000000" diagramOrientation="Up" height="15" enabled="0" showAxis="1" spacing="5" minScaleDenominator="0" barWidth="5" spacingUnitScale="3x:0,0,0,0,0,0" backgroundAlpha="255" penAlpha="255" penWidth="0" backgroundColor="#ffffff" direction="0" minimumSize="0" opacity="1" sizeScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" spacingUnit="MM" lineSizeType="MM" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" width="15" rotationOffset="270" sizeType="MM">
+          <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+          <axisSymbol>
+            <symbol alpha="1" clip_to_extent="1" type="line" name="" force_rhr="0">
+              <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="35,35,35,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0.26"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="ring_filter" v="0"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option value="" type="QString" name="name"/>
+                    <Option name="properties"/>
+                    <Option value="collection" type="QString" name="type"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings linePlacementFlags="18" showAll="1" zIndex="0" obstacle="0" priority="0" dist="0" placement="1">
+        <properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks/>
+        <checkConfiguration type="Map">
+          <Option type="Map" name="QgsGeometryGapCheck">
+            <Option value="0" type="double" name="allowedGapsBuffer"/>
+            <Option value="false" type="bool" name="allowedGapsEnabled"/>
+            <Option value="" type="QString" name="allowedGapsLayer"/>
+          </Option>
+        </checkConfiguration>
+      </geometryOptions>
+      <referencedLayers/>
+      <referencingLayers/>
+      <fieldConfiguration>
+        <field name="OBJECTID">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ID">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SEGPAR">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SR_ID">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SR_SEGMENT">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="TYPE">
+          <editWidget type="ValueMap">
+            <config>
+              <Option type="Map">
+                <Option type="List" name="map">
+                  <Option type="Map">
+                    <Option value="RO" type="QString" name="Road"/>
+                  </Option>
+                  <Option type="Map">
+                    <Option value="RE" type="QString" name="Reserve"/>
+                  </Option>
+                </Option>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="STATUS">
+          <editWidget type="ValueMap">
+            <config>
+              <Option type="Map">
+                <Option type="List" name="map">
+                  <Option type="Map">
+                    <Option value="Open" type="QString" name="Open"/>
+                  </Option>
+                  <Option type="Map">
+                    <Option value="Conditional" type="QString" name="Conditional"/>
+                  </Option>
+                  <Option type="Map">
+                    <Option value="Closed" type="QString" name="Closed"/>
+                  </Option>
+                </Option>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CLASSIFICATION">
+          <editWidget type="ValueMap">
+            <config>
+              <Option type="Map">
+                <Option type="List" name="map">
+                  <Option type="Map">
+                    <Option value="PrimaryA" type="QString" name="Primary"/>
+                  </Option>
+                  <Option type="Map">
+                    <Option value="PrimaryB" type="QString" name="Secondary"/>
+                  </Option>
+                  <Option type="Map">
+                    <Option value="Secondary" type="QString" name="Minor and Unused"/>
+                  </Option>
+                </Option>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="AUDIT_CREATE_USER">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="AUDIT_CREATE_DATE">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="AUDIT_EDIT_USER">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="AUDIT_EDIT_DATE">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="REVIEW_STATUS">
+          <editWidget type="ValueMap">
+            <config>
+              <Option type="Map">
+                <Option type="List" name="map">
+                  <Option type="Map">
+                    <Option value="C" type="QString" name="Confirmation of Change Required"/>
+                  </Option>
+                  <Option type="Map">
+                    <Option value="D" type="QString" name="Confirmation of Deletion Required"/>
+                  </Option>
+                </Option>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SR_LEGACY_ID">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SHAPE.AREA">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SHAPE.LEN">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="OBJECTID" index="0" name=""/>
+        <alias field="ID" index="1" name=""/>
+        <alias field="SEGPAR" index="2" name=""/>
+        <alias field="SR_ID" index="3" name=""/>
+        <alias field="SR_SEGMENT" index="4" name=""/>
+        <alias field="TYPE" index="5" name=""/>
+        <alias field="STATUS" index="6" name=""/>
+        <alias field="CLASSIFICATION" index="7" name=""/>
+        <alias field="AUDIT_CREATE_USER" index="8" name=""/>
+        <alias field="AUDIT_CREATE_DATE" index="9" name=""/>
+        <alias field="AUDIT_EDIT_USER" index="10" name=""/>
+        <alias field="AUDIT_EDIT_DATE" index="11" name=""/>
+        <alias field="REVIEW_STATUS" index="12" name=""/>
+        <alias field="SR_LEGACY_ID" index="13" name=""/>
+        <alias field="SHAPE.AREA" index="14" name=""/>
+        <alias field="SHAPE.LEN" index="15" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" field="OBJECTID" applyOnUpdate="0"/>
+        <default expression="" field="ID" applyOnUpdate="0"/>
+        <default expression="" field="SEGPAR" applyOnUpdate="0"/>
+        <default expression="" field="SR_ID" applyOnUpdate="0"/>
+        <default expression="" field="SR_SEGMENT" applyOnUpdate="0"/>
+        <default expression="" field="TYPE" applyOnUpdate="0"/>
+        <default expression="" field="STATUS" applyOnUpdate="0"/>
+        <default expression="" field="CLASSIFICATION" applyOnUpdate="0"/>
+        <default expression="" field="AUDIT_CREATE_USER" applyOnUpdate="0"/>
+        <default expression="" field="AUDIT_CREATE_DATE" applyOnUpdate="0"/>
+        <default expression="" field="AUDIT_EDIT_USER" applyOnUpdate="0"/>
+        <default expression="" field="AUDIT_EDIT_DATE" applyOnUpdate="0"/>
+        <default expression="" field="REVIEW_STATUS" applyOnUpdate="0"/>
+        <default expression="" field="SR_LEGACY_ID" applyOnUpdate="0"/>
+        <default expression="" field="SHAPE.AREA" applyOnUpdate="0"/>
+        <default expression="" field="SHAPE.LEN" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint notnull_strength="1" exp_strength="0" field="OBJECTID" constraints="3" unique_strength="1"/>
+        <constraint notnull_strength="0" exp_strength="0" field="ID" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="SEGPAR" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="SR_ID" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="SR_SEGMENT" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="TYPE" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="STATUS" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="CLASSIFICATION" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="AUDIT_CREATE_USER" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="AUDIT_CREATE_DATE" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="AUDIT_EDIT_USER" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="AUDIT_EDIT_DATE" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="REVIEW_STATUS" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="SR_LEGACY_ID" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="SHAPE.AREA" constraints="0" unique_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="SHAPE.LEN" constraints="0" unique_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="OBJECTID"/>
+        <constraint desc="" exp="" field="ID"/>
+        <constraint desc="" exp="" field="SEGPAR"/>
+        <constraint desc="" exp="" field="SR_ID"/>
+        <constraint desc="" exp="" field="SR_SEGMENT"/>
+        <constraint desc="" exp="" field="TYPE"/>
+        <constraint desc="" exp="" field="STATUS"/>
+        <constraint desc="" exp="" field="CLASSIFICATION"/>
+        <constraint desc="" exp="" field="AUDIT_CREATE_USER"/>
+        <constraint desc="" exp="" field="AUDIT_CREATE_DATE"/>
+        <constraint desc="" exp="" field="AUDIT_EDIT_USER"/>
+        <constraint desc="" exp="" field="AUDIT_EDIT_DATE"/>
+        <constraint desc="" exp="" field="REVIEW_STATUS"/>
+        <constraint desc="" exp="" field="SR_LEGACY_ID"/>
+        <constraint desc="" exp="" field="SHAPE.AREA"/>
+        <constraint desc="" exp="" field="SHAPE.LEN"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns>
+          <column width="-1" type="field" name="OBJECTID" hidden="0"/>
+          <column width="-1" type="field" name="ID" hidden="0"/>
+          <column width="-1" type="field" name="SEGPAR" hidden="0"/>
+          <column width="-1" type="field" name="SR_ID" hidden="0"/>
+          <column width="-1" type="field" name="SR_SEGMENT" hidden="0"/>
+          <column width="-1" type="field" name="TYPE" hidden="0"/>
+          <column width="-1" type="field" name="STATUS" hidden="0"/>
+          <column width="-1" type="field" name="CLASSIFICATION" hidden="0"/>
+          <column width="-1" type="field" name="AUDIT_CREATE_USER" hidden="0"/>
+          <column width="-1" type="field" name="AUDIT_CREATE_DATE" hidden="0"/>
+          <column width="-1" type="field" name="AUDIT_EDIT_USER" hidden="0"/>
+          <column width="-1" type="field" name="AUDIT_EDIT_DATE" hidden="0"/>
+          <column width="-1" type="field" name="REVIEW_STATUS" hidden="0"/>
+          <column width="-1" type="field" name="SR_LEGACY_ID" hidden="0"/>
+          <column width="-1" type="field" name="SHAPE.AREA" hidden="0"/>
+          <column width="-1" type="field" name="SHAPE.LEN" hidden="0"/>
+          <column width="-1" type="actions" hidden="1"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="AUDIT_CREATE_DATE"/>
+        <field editable="1" name="AUDIT_CREATE_USER"/>
+        <field editable="1" name="AUDIT_EDIT_DATE"/>
+        <field editable="1" name="AUDIT_EDIT_USER"/>
+        <field editable="1" name="CLASSIFICATION"/>
+        <field editable="1" name="ID"/>
+        <field editable="1" name="OBJECTID"/>
+        <field editable="1" name="REVIEW_STATUS"/>
+        <field editable="1" name="SEGPAR"/>
+        <field editable="1" name="SHAPE.AREA"/>
+        <field editable="1" name="SHAPE.LEN"/>
+        <field editable="1" name="SR_ID"/>
+        <field editable="1" name="SR_LEGACY_ID"/>
+        <field editable="1" name="SR_SEGMENT"/>
+        <field editable="1" name="STATUS"/>
+        <field editable="1" name="TYPE"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="AUDIT_CREATE_DATE"/>
+        <field labelOnTop="0" name="AUDIT_CREATE_USER"/>
+        <field labelOnTop="0" name="AUDIT_EDIT_DATE"/>
+        <field labelOnTop="0" name="AUDIT_EDIT_USER"/>
+        <field labelOnTop="0" name="CLASSIFICATION"/>
+        <field labelOnTop="0" name="ID"/>
+        <field labelOnTop="0" name="OBJECTID"/>
+        <field labelOnTop="0" name="REVIEW_STATUS"/>
+        <field labelOnTop="0" name="SEGPAR"/>
+        <field labelOnTop="0" name="SHAPE.AREA"/>
+        <field labelOnTop="0" name="SHAPE.LEN"/>
+        <field labelOnTop="0" name="SR_ID"/>
+        <field labelOnTop="0" name="SR_LEGACY_ID"/>
+        <field labelOnTop="0" name="SR_SEGMENT"/>
+        <field labelOnTop="0" name="STATUS"/>
+        <field labelOnTop="0" name="TYPE"/>
+      </labelOnTop>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"OBJECTID"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </maplayers>
+</qlr>

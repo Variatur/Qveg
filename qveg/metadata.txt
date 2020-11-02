@@ -1,0 +1,47 @@
+# This file contains metadata for your plugin.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Qveg
+qgisMinimumVersion=3.0
+description=This plugin loads Queensland vegetation management data from the Queensland government feature server. Layers can be loaded using property (lot-plan), regional ecosystem, or extent searches. The plugin can also load imagery, basemaps, various informative overlays, and export maps to a georeferenced PDF. A number of vector layers include styling which allows QGIS Actions to generate formatted Google Earth KML files and interogate Queensland government online databases to collect information on Accepted Development Vegetation Clearing Code (ADVCC) and Area Management Plan (AMP) notification history.
+version=5.0
+author=Otto and Gary Pattemore
+email=Gary.Pattemore@dnrme.qld.gov.au
+
+about=Loads and displays data relevant to vegetation regulation in Queensland, Australia. Data is sourced from the Queensland government's public web feature server based on a search of LotPlan number(s). LotPlan numbers uniquely identify individual properties in Queensland, Australia. Information on vegetation regulation in Queensland is available here: https://www.qld.gov.au/environment/land/management/vegetation . It is recommended that users seek advice via the contact information in the above webpage prior to clearing vegetation in Queensland and obtained a vegetation management property report here: https://www.qld.gov.au/environment/land/management/vegetation/maps/map-request
+
+tracker=https://gitlab.com/g.pattemore/qveg/-/issues
+repository=https://gitlab.com/g.pattemore/qveg
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=yes
+# Uncomment the following line and add your changelog:
+changelog= Update Lot-plan queries to check if the maximum number of objects exceeds the server limit of 2000. If so, then collect features in batches. This fixed a bug which rarely occurred, being restricted to very large lot-plans with high feature counts.
+
+# Tags are comma separated with spaces allowed
+tags=cadastre,Queensland,Australia,vegetation regulation,basemap,tenure,ecosystem,habitat,wetland,koala,waterway,river,ADVCC,AMP,KMZ,KML,PDF
+
+homepage=https://gitlab.com/g.pattemore/qveg
+category=Analysis
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+Category of the plugin: Raster, Vector, Database or Web
+# category=
+
+# If the plugin can run on QGIS Server.
+server=False
+
