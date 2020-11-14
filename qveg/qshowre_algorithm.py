@@ -41,12 +41,10 @@ from PyQt5.QtGui import QIcon
 import time
 import datetime
 import json
+from .cadastral import *
+from .nr_collector import *
+from .query import *
 #
-def resolve(name, basepath=None):
-    if not basepath:
-      basepath = os.path.dirname(os.path.realpath(__file__))
-    return os.path.join(basepath, name)
-
 class QshowreAlgorithm(QgsProcessingAlgorithm):
     INPUT = 'INPUT'
     LOADEXACT = 'LOADEXACT'
@@ -80,60 +78,7 @@ class QshowreAlgorithm(QgsProcessingAlgorithm):
                 self.tr("Directory to save output files")
             )
         )
-
-    def GetGEOJSON(self,URL,context,feedback):
-        #This method of server access avoids firewall problems
-        params = {
-            'URL' : URL,
-            'OUTPUT' : "TEMPORARY_OUTPUT"
-        }
-        tempLayer = processing.run(
-            'native:filedownloader',
-            params,
-            is_child_algorithm=True,
-            context=context,
-            feedback=feedback)["OUTPUT"]
-        if feedback.isCanceled():
-            return None
-        file = open(tempLayer)
-        return_string = file.read()
-        file.close()
-        return return_string
-    def BuildQuery(self,post,context,feedback):
-        # 
-        baseURL = "https://gisservices.information.qld.gov.au/arcgis/rest/"
-        # Mandatory query parameters
-        service1 = post.get('service1', '')
-        service2 = post.get('service2', '')
-        serviceNumber = post.get('serviceNumber', '')
-        #
-        # Optional query parameters with defaults
-        f = post.get('f', 'json')
-        serviceType = post.get('serviceType', "MapServer/")
-        returnCountOnly = post.get('returnCountOnly', "false")
-        returnGeometry = post.get('returnGeometry',"true")
-        returnIdsOnly = post.get('returnIdsOnly', "false")
-        outFields = post.get('outFields', '*')
-        outSR = post.get('outSR', '7844')
-        inSR = post.get('inSR', '7844')
-        geometryType = post.get('geometryType', "esriGeometryEnvelope")
-        #
-        # Optional query parameters with empty string defaults
-        where = post.get('where', '')
-        objectIds = post.get('objectIds', '')
-        geometry = post.get('geometry', '')
-        # Build
-        serviceURL = "services/"+service1+service2+serviceType
-        whereURL = serviceNumber+"/query?where="+where+"&objectIds="+objectIds+"&time="
-        geomURL = "&geometry="+geometry+"&geometryType="+geometryType+"&inSR="+inSR+"&spatialRel=esriSpatialRelIntersects&distance=&units=esriSRUnit_Meter&relationParam="
-        out1URL = "&outFields="+outFields+"&returnGeometry="+returnGeometry+"&maxAllowableOffset=&geometryPrecision=&outSR="+outSR+"&having=&gdbVersion=&historicMoment=&returnDistinctValues=false"
-        out2URL = "&returnIdsOnly="+returnIdsOnly+"&returnCountOnly="+returnCountOnly+"&returnExtentOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics="
-        out3URL = "&returnZ=false&returnM=false&multipatchOption=xyFootprint&resultOffset=&resultRecordCount=&returnTrueCurves=false&returnExceededLimitFeatures=false"
-        out4URL = "&quantizationParameters=&returnCentroid=false&sqlFormat=none&resultType=&featureEncoding=esriDefault&f="+f
-        queryURL = baseURL+serviceURL+whereURL+geomURL+out1URL+out2URL+out3URL+out4URL
-        # --following line to be deleted
-        print(queryURL)
-        return queryURL
+#
     def LoadRELayer(self,res,outputDIR,standardCRS,context,feedback,PrimaryOnly,Exact):
         #make short form of CRS for web query
         standardCRSshort = standardCRS[len("EPSG:"):]
@@ -185,7 +130,7 @@ class QshowreAlgorithm(QgsProcessingAlgorithm):
                         where = RESQLQuery,
                         returnGeometry = 'false'
                         )
-        objectIDs = self.GetGEOJSON(self.BuildQuery(post,context,feedback),context,feedback)
+        objectIDs = GetGEOJSON(BuildQuery(post,context,feedback),context,feedback)
         if objectIDs == None:
             feedback.reportError("Problem communicating with server [code E1.1]", True)
             return None
@@ -220,7 +165,7 @@ class QshowreAlgorithm(QgsProcessingAlgorithm):
                             objectIds = sublist,
                             outSR = standardCRSshort
                             )
-            sublistQueryResult = self.GetGEOJSON(self.BuildQuery(post,context,feedback),context,feedback)
+            sublistQueryResult = GetGEOJSON(BuildQuery(post,context,feedback),context,feedback)
             if sublistQueryResult == None:
                 feedback.reportError("Problem communicating with server [code E1.2]", True)
                 return None
@@ -252,12 +197,10 @@ class QshowreAlgorithm(QgsProcessingAlgorithm):
             feedback.setProgress(25+(position))
             position = position + 1
             if position*bundleSize < objectCount: feedback.setProgressText("Got "+str(position*bundleSize)+" of "+str(objectCount)+" polygons")
-        #Write layer to shape file and reload layer from shapefile
+        #Write layer to file and reload
         TimeString = str(datetime.datetime.now()).replace(':','-').replace(':','-').replace('.','-').replace(' ','-')
         #Save as GeoPackage
         QgsVectorFileWriter.writeAsVectorFormat(RElayer,outputDIR+baseName+TimeString+".gpkg",'utf-8',QgsCoordinateReferenceSystem(standardCRS))
-        #Save as shapefile 
-        #QgsVectorFileWriter.writeAsVectorFormat(RElayer,outputDIR+baseName+TimeString+".shp",'utf-8',QgsCoordinateReferenceSystem(standardCRS),driverName="ESRI Shapefile")
         # Reload layer
         RElayer = QgsVectorLayer(outputDIR+baseName+TimeString+".gpkg",layerName,"ogr")
         if not RElayer.isValid():
@@ -274,7 +217,6 @@ class QshowreAlgorithm(QgsProcessingAlgorithm):
         RElayer.saveStyleToDatabase(name="Qveg-default", description=StyleFileName, useAsDefault=True, uiFileContent="")
         RElayer.triggerRepaint()
         return RElayer
-
     def processAlgorithm(self, parameters, context, feedback):
         # Set the standard CRS to GDA2020 (EPSG:7844)
         standardCRS = "EPSG:7844"

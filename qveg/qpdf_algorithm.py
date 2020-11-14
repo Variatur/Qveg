@@ -39,19 +39,15 @@ from PyQt5.QtGui import QIcon
 from pathlib import Path
 import os
 import math
-
+from .query import resolve
 #
-def resolve(name, basepath=None):
-    if not basepath:
-      basepath = os.path.dirname(os.path.realpath(__file__))
-    return os.path.join(basepath, name)
-
 class QpdfAlgorithm(QgsProcessingAlgorithm):
     """Exports the current map view to PDF"""
     TEMPLATE = 'TEMPLATE'
     PAGESIZE = 'PAGESIZE'
     OUTPUT = 'OUTPUT'
     TITLE = 'TITLE'
+    NAME = 'NAME'
     DISCLAIMER = 'DISCLAIMER'
     LOGO = 'LOGO'
     IMAGE = 'IMAGE'
@@ -65,11 +61,10 @@ class QpdfAlgorithm(QgsProcessingAlgorithm):
             QgsProcessingParameterEnum(
                 self.PAGESIZE,
                 self.tr('Select a page size'),
-                ['A0','A1','A2','A3','A4'],
-                defaultValue = '3',
+                ['A0','A3','A4'],
+                defaultValue = '1',
             )
         )
-        
         self.addParameter(
             QgsProcessingParameterString(
                 self.TITLE,
@@ -77,7 +72,15 @@ class QpdfAlgorithm(QgsProcessingAlgorithm):
                 defaultValue = 'Regional ecosystem map (regulated)',
             )
         )
-        
+        self.addParameter(
+            QgsProcessingParameterString(
+                self.NAME,
+                self.tr('Map Creator name or initials or other free text (max. 5 lines, 25 characters/line, auto wrapping)'),
+                defaultValue = 'Map created by: ',
+                multiLine = True,
+                optional = True
+            )
+        )
         self.addParameter(
             QgsProcessingParameterFile(
                 self.DISCLAIMER,
@@ -119,11 +122,12 @@ class QpdfAlgorithm(QgsProcessingAlgorithm):
     def processAlgorithm(self, parameters, context, feedback):
         #template = self.parameterAsFile(parameters, 'TEMPLATE', context)
         title = self.parameterAsString(parameters, 'TITLE', context)
+        Name = self.parameterAsString(parameters, 'NAME', context)
         disclaimer = self.parameterAsFileOutput(parameters, 'DISCLAIMER', context)
         logo = self.parameterAsFileOutput(parameters, 'LOGO', context)
         image = self.parameterAsFileOutput(parameters, 'IMAGE', context)
         pdf = self.parameterAsFileOutput(parameters, 'OUTPUT', context)
-        page_size = self.parameterAsFileOutput(parameters, 'PAGESIZE', context)
+        page_size = self.parameterAsEnum(parameters, 'PAGESIZE', context)
         quick = self.parameterAsBoolean(parameters, 'LOADQUICK', context)
         feedback.setProgress(10)
         #
@@ -131,6 +135,10 @@ class QpdfAlgorithm(QgsProcessingAlgorithm):
         canvas = iface.mapCanvas()
         canvasExtent = canvas.extent()
         #Check QGIS version to avoid precision bug #37755 (20-30 metre errors at a property scale). Fixed.
+        if page_size == 0: page = 'A0'
+        elif page_size == 1: page = 'A3'
+        else: page = 'A4'
+        page_size = page
         ver = QgsExpressionContextUtils.globalScope().variable('qgis_version_no')
         if not(ver>=31600 or (ver>=31011 and ver<31200)): quick = True
         if quick == True:
@@ -138,7 +146,6 @@ class QpdfAlgorithm(QgsProcessingAlgorithm):
             layout = QgsLayout(project)
             layout.initializeDefaults()
             # Setup page
-            page_size = 'A'+ page_size
             pc = layout.pageCollection()
             pc.page(0).setPageSize(page_size, QgsLayoutItemPage.Orientation.Landscape)
             feedback.setProgress(20)
@@ -165,6 +172,10 @@ class QpdfAlgorithm(QgsProcessingAlgorithm):
             title_item = layout.itemById('Label1')
             title_item.setText(title)
             feedback.setProgress(50)
+            #add Name 
+            name_item = layout.itemById('Label2')
+            name_item.setText(Name)
+            feedback.setProgress(55)
             #add disclaimer
             disclaimer_item = layout.itemById('Disclaimer1')
             disclaimer_item.setText(disclaimer_content)
@@ -206,7 +217,6 @@ class QpdfAlgorithm(QgsProcessingAlgorithm):
             #Use print layout manager
             manager = project.layoutManager()
             layout = QgsPrintLayout(project)
-            page_size = 'A'+ page_size
             layoutName = title + '_' + page_size
             layout.initializeDefaults()
             layout.setName(layoutName)
@@ -238,6 +248,10 @@ class QpdfAlgorithm(QgsProcessingAlgorithm):
             title_item = layout.itemById('Label1')
             title_item.setText(title)
             feedback.setProgress(50)
+            #add Name 
+            name_item = layout.itemById('Label2')
+            name_item.setText(Name)
+            feedback.setProgress(55)
             #add disclaimer
             disclaimer_item = layout.itemById('Disclaimer1')
             disclaimer_item.setText(disclaimer_content)

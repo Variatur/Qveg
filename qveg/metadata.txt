@@ -12,18 +12,18 @@ email=Gary.Pattemore@dnrme.qld.gov.au
 
 about=Loads and displays data relevant to vegetation regulation in Queensland, Australia. Data is sourced from the Queensland government's public web feature server based on a search of LotPlan number(s). LotPlan numbers uniquely identify individual properties in Queensland, Australia. Information on vegetation regulation in Queensland is available here: https://www.qld.gov.au/environment/land/management/vegetation . It is recommended that users seek advice via the contact information in the above webpage prior to clearing vegetation in Queensland and obtained a vegetation management property report here: https://www.qld.gov.au/environment/land/management/vegetation/maps/map-request
 
-tracker=https://gitlab.com/g.pattemore/qveg/-/issues
-repository=https://gitlab.com/g.pattemore/qveg
+tracker=https://github.com/PattemoreSoftware/Qveg/issues
+repository=https://github.com/PattemoreSoftware/Qveg
 # End of mandatory metadata
 
 # Recommended items:
 
 hasProcessingProvider=yes
 # Uncomment the following line and add your changelog:
-changelog= Update Lot-plan queries to check if the maximum number of objects exceeds the server limit of 2000. If so, then collect features in batches. This fixed a bug which rarely occurred, being restricted to very large lot-plans with high feature counts.
+changelog= Rebase lot-plan and extent queries to ensure that server limit is never exceeded. Include option for Statewide Landcover and Tree Study spatial data. Several other minor improvements to user experience.
 
 # Tags are comma separated with spaces allowed
-tags=cadastre,Queensland,Australia,vegetation regulation,basemap,tenure,ecosystem,habitat,wetland,koala,waterway,river,ADVCC,AMP,KMZ,KML,PDF
+tags=cadastre,Queensland,Australia,vegetation regulation,tenure,ecosystem,habitat,wetland,koala,waterway,river,ADVCC,AMP,KMZ,KML,PDF,Statewide Landcover and Tree Study,regional ecosystem,basemap
 
 homepage=https://gitlab.com/g.pattemore/qveg
 category=Analysis
