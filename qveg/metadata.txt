@@ -6,7 +6,7 @@
 name=Qveg
 qgisMinimumVersion=3.0
 description=This plugin loads Queensland vegetation management data from the Queensland government feature server. Layers can be loaded using property (lot-plan), regional ecosystem, or extent searches. The plugin can also load imagery, basemaps, various informative overlays, and export maps to a georeferenced PDF. A number of vector layers include styling which allows QGIS Actions to generate formatted Google Earth KML files and interogate Queensland government online databases to collect information on Accepted Development Vegetation Clearing Code (ADVCC) and Area Management Plan (AMP) notification history.
-version=5.0
+version=5.1
 author=Otto and Gary Pattemore
 email=Gary.Pattemore@dnrme.qld.gov.au
 
@@ -20,7 +20,7 @@ repository=https://github.com/PattemoreSoftware/Qveg
 
 hasProcessingProvider=yes
 # Uncomment the following line and add your changelog:
-changelog= Rebase lot-plan and extent queries to ensure that server limit is never exceeded. Include option for Statewide Landcover and Tree Study spatial data. Several other minor improvements to user experience.
+changelog= Update satellite imagery basemap.
 
 # Tags are comma separated with spaces allowed
 tags=cadastre,Queensland,Australia,vegetation regulation,tenure,ecosystem,habitat,wetland,koala,waterway,river,ADVCC,AMP,KMZ,KML,PDF,Statewide Landcover and Tree Study,regional ecosystem,basemap

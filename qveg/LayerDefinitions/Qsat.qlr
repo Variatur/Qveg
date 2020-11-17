@@ -1,0 +1,144 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group name="" checked="Qt::Checked" expanded="1">
+    <customproperties/>
+    <layer-tree-layer id="QSat___Planet_2017__Quarter_3_f9f8ae59_e57a_4600_bfc5_63bae002fef7" legend_exp="" legend_split_behavior="0" patch_size="-1,-1" name="QSat - Planet 2017, 3rd quarter" source=" crs='EPSG:3857' format='' layer='' url='https://spatial-img.information.qld.gov.au/arcgis/rest/services/Basemaps/LatestSatelliteWOS_AllUsers/ImageServer'" providerKey="arcgismapserver" checked="Qt::Checked" expanded="0">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer styleCategories="AllStyleCategories" refreshOnNotifyEnabled="0" minScale="1e+08" maxScale="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" type="raster" autoRefreshTime="0">
+      <extent>
+        <xmin>15333392.08207066915929317</xmin>
+        <ymin>-3440731.61343653965741396</ymin>
+        <xmax>17116801.71651475131511688</xmax>
+        <ymax>-1005161.25375423370860517</ymax>
+      </extent>
+      <id>QSat___Planet_2017__Quarter_3_f9f8ae59_e57a_4600_bfc5_63bae002fef7</id>
+      <datasource> crs='EPSG:3857' format='' layer='' url='https://spatial-img.information.qld.gov.au/arcgis/rest/services/Basemaps/LatestSatelliteWOS_AllUsers/ImageServer'</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <timestamp>2020-11-17T17:13:50</timestamp>
+      <layername>QSat - Planet 2017, 3rd quarter</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 85°S to 85°N"],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo-Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier>https://spatial-img.information.qld.gov.au/arcgis/rest/services/Basemaps/LatestSatelliteWOS_AllUsers/ImageServer</identifier>
+        <parentidentifier>https://spatial-img.information.qld.gov.au/arcgis/rest/services/Basemaps/LatestSatelliteWOS_AllUsers/ImageServer</parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title>QSat - Planet 2017, Quarter 3</title>
+        <abstract>A basemap service that displays a visually-enhanced mosaic of high resolution authoritative general reference imagery captured by CubeSat satellite spacecrafts (Planet Labs Incorporated) over areas of Queensland.  This service is designed to provide a performance imagery basemap (on demand cache) for clients that don’t support cached/tiled services.
+
+This service comprises a 2.4 metre resolution orthorectified visual mosaic product over Queensland originally acquired under the QSat initiative from Planet during 2017 Quarter 3.  The visual mosaic product is optimal for simple and direct use of the imagery and is designed and made visually appealing for a wide variety of applications that require imagery with an accurate geolocation and cartographic projection.
+
+Quality Lineage: The mosaic encompasses a single-layer composite of multiple customised PlanetScope ortho tiles (5 km x 5 km) where each tile is composed of the highest quality natural colour (RGB) PlanetScope Ortho Scene product imagery acquired between 1st July 2017 and 30th September 2017 (2017 Quarter 3).  Each PlanetScope scene used in the generation of a tile may have been originally captured at a Ground Sample Distance (GSD) of up to 3.7 metres (at reference altitude 475km).
+
+Sensor-related effects are corrected using sensor telemetry and a sensor model, bands are co-registered, and spacecraft-related effects are corrected using attitude telemetry and best available ephemeris data.
+
+The PlanetScope tiles are orthorectified and colour-corrected (using a colour curve). This correction attempts to optimize colours as seen by the human eye providing images as they would look if viewed from the perspective of the satellite. The tiles are processed to remove distortions caused by terrain and can be used for cartographic mapping and visualization purposes. The image processing eliminates the perspective effect on the ground (not on buildings), restoring the geometry of a vertical shot. Additionally, a correction is made to the sun angle in each image to account for differences in latitude and time of acquisition.  The PlanetScope tiles are orthorectified using GCPs and fine DEMs (30 m to 90 m posting) to less than 10 m RMSE positional accuracy.
+
+Total cloud cover of the mosaic product is 0.23%.
+
+The use of this service and imagery data contained is available publically under Creative Commons Attribution-ShareAlike licence (CC BY-SA).  Under the end user licence obligations the attribution text must be included on any copies of the licensed data however they are altered, reformatted or redisplayed.
+
+Contact Info: opendata@dnrme.qld.gov.au
+
+Land and Spatial Information, Department of Natural Resources, Mines and Energy</abstract>
+        <keywords vocabulary="keywords">
+          <keyword></keyword>
+        </keywords>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links>
+          <link description="" format="" name="Source" url="https://spatial-img.information.qld.gov.au/arcgis/rest/services/Basemaps/LatestSatelliteWOS_AllUsers/ImageServer" type="WWW:LINK" size="" mimeType=""/>
+        </links>
+        <fees></fees>
+        <rights>Includes material © Planet Labs Netherlands B.V. 2019-2020, reproduced under licence from Planet and Geoplex, all rights reserved.</rights>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 85°S to 85°N"],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+            <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+            <srsid>3857</srsid>
+            <srid>3857</srid>
+            <authid>EPSG:3857</authid>
+            <description>WGS 84 / Pseudo-Mercator</description>
+            <projectionacronym>merc</projectionacronym>
+            <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial dimensions="2" minz="0" maxy="-1005161.25379999994765967" crs="EPSG:3857" maxz="0" miny="-3440731.6134000001475215" minx="15333392.08210000023245811" maxx="17116801.71649999916553497"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider>arcgismapserver</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <temporal enabled="0" mode="0" fetchMode="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <customproperties>
+        <property value="false" key="WMSBackgroundLayer"/>
+        <property value="false" key="WMSPublishDataSourceUrl"/>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property value="Feature" key="identify/format"/>
+      </customproperties>
+      <pipe>
+        <rasterrenderer band="1" alphaBand="-1" nodataColor="" type="singlebandcolordata" opacity="1">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" brightness="0"/>
+        <huesaturation colorizeGreen="128" colorizeBlue="128" saturation="0" colorizeStrength="100" colorizeOn="0" grayscaleMode="0" colorizeRed="255"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+  </maplayers>
+</qlr>

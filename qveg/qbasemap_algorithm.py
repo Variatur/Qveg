@@ -61,7 +61,7 @@ class QbasemapAlgorithm(QgsProcessingAlgorithm):
         self.addParameter(
             QgsProcessingParameterBoolean(
                 self.LOADSATHR,
-                self.tr('Imagery -Qld government- high resolution'),
+                self.tr('Imagery -QSat- Planet 2017, 3rd quarter'),
                 False
             )
         )
@@ -154,7 +154,7 @@ class QbasemapAlgorithm(QgsProcessingAlgorithm):
             feedback.setProgress(40)
         if loadSatHR:
             feedback.setProgressText("Getting Qld government HiRes imagery...")
-            QgsLayerDefinition().loadLayerDefinition(resolve('LayerDefinitions/QldHiResImageryWMTS.qlr'), project, root)
+            QgsLayerDefinition().loadLayerDefinition(resolve('LayerDefinitions/Qsat.qlr'), project, root)
             feedback.setProgress(50)
         if loadGoogle:
             feedback.setProgressText("Getting Google Hybrid imagery...")
