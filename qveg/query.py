@@ -82,7 +82,8 @@ def BuildQuery(post,context,feedback):
     #print(objectIds)
     geometry = post.get('geometry', '')
     # Build
-    baseURL = "https://gisservices.information.qld.gov.au/arcgis/rest/"
+    #baseURL = "https://gisservices.information.qld.gov.au/arcgis/rest/"
+    baseURL = "https://spatial-gis.information.qld.gov.au/arcgis/rest/"
     serviceURL = "services/"+service1+service2+serviceType
     whereURL = serviceNumber+"/query?where="+where+"&objectIds="+objectIds+"&time="
     geomURL = "&geometry="+geometry+"&geometryType="+geometryType+"&inSR="+inSR+"&spatialRel=esriSpatialRelIntersects&distance=&units=esriSRUnit_Meter&relationParam="
@@ -94,7 +95,8 @@ def BuildQuery(post,context,feedback):
     #
     return queryURL
 def ItemInfo(post,context,feedback):
-    baseURL = "https://gisservices.information.qld.gov.au/arcgis/rest/"
+    #baseURL = "https://gisservices.information.qld.gov.au/arcgis/rest/"
+    baseURL = "https://spatial-gis.information.qld.gov.au/arcgis/rest/"
     # Mandatory query parameters
     service1 = post.get('service1', '')
     service2 = post.get('service2', '')
@@ -109,7 +111,8 @@ def ItemInfo(post,context,feedback):
     queryURL = baseURL+serviceURL+whereURL
     return queryURL
 def queryLayerName(post,context,feedback):
-    baseURL = "https://gisservices.information.qld.gov.au/arcgis/rest/"
+    #baseURL = "https://gisservices.information.qld.gov.au/arcgis/rest/"
+    baseURL = "https://spatial-gis.information.qld.gov.au/arcgis/rest/"
     # Mandatory query parameters
     service1 = post.get('service1', '')
     service2 = post.get('service2', '')

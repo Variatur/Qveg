@@ -257,7 +257,7 @@ class QextentAlgorithm(QgsProcessingAlgorithm):
         xmax = str(canvasExtent.xMaximum())
         ymax = str(canvasExtent.yMaximum())
         ExtentString = xmin+","+ymin+","+xmax+","+ymax
-        print(ExtentString)
+        #print(ExtentString)
         TimeString = str(datetime.datetime.now()).replace(':','-').replace(':','-').replace('.','-').replace(' ','-')
         # Initialise dictionaries
         post = {}
@@ -397,47 +397,49 @@ class QextentAlgorithm(QgsProcessingAlgorithm):
                 GrandTotal=self.getNRlayer(RC,GrandTotal,post,layerInfo,context,feedback)
             if loadSLATS:
                 # Update server details
-                post.update(dict(   service1 = "VegView/", 
-                                    service2 = "SLATS/"
+                post.update(dict(   service2 = "SLATS/"
                                     ))
-                for i in range(1,24):
-                    post.update(dict(serviceNumber = str(i)))
+                for i in range(2,47):   #200-249
+                    if ((i+198) < (47+198)) and (i%2 != 0):
+                        continue
+                    post.update(dict(serviceNumber = str(i+198)))
                     LayerName=json.loads(GetGEOJSON(queryLayerName(post,context,feedback),context,feedback))
-                    DefaultLayerName = str(i)
+                    DefaultLayerName = str(i+198)
                     LayerName=LayerName.get('name',DefaultLayerName)
                     # Colour coding for SLATS yearly layers
                     if RC>0:
+                        factor = 50
                         if i%2 == 0:
-                            colourCodeR=int((25-i)/(30)*250)
-                            colourCodeG=int((i)/(30)*250)
-                            colourCodeB=int((i)/(30)*250)
+                            colourCodeR=int((factor-i)/(factor)*250)
+                            colourCodeG=int((i)/(factor)*250)
+                            colourCodeB=int((i)/(factor)*250)
                         else:
-                            colourCodeR=int((i)/(26)*250)
-                            colourCodeG=int((i)/(26)*250)
-                            colourCodeB=int((25-i)/(26)*250)
+                            colourCodeR=int((i)/(factor)*250)
+                            colourCodeG=int((i)/(factor)*250)
+                            colourCodeB=int((factor-i)/(factor)*250)
                         if i%3 == 0:
-                            colourCodeR=int((i)/(30)*250)
-                            colourCodeG=int((25-i)/(30)*250)
-                            colourCodeB=int((i)/(30)*250)
+                            colourCodeR=int((i)/(factor)*250)
+                            colourCodeG=int((factor-i)/(factor)*250)
+                            colourCodeB=int((i)/(factor)*250)
                         if i%4 == 0:
-                            colourCodeR=int((25-i)/(30)*250)
-                            colourCodeG=int((i)/(30)*250)
-                            colourCodeB=int((25-i)/(30)*250)
+                            colourCodeR=int((factor-i)/(factor)*250)
+                            colourCodeG=int((i)/(factor)*250)
+                            colourCodeB=int((factor-i)/(factor)*250)
                         if i%5 == 0:
-                            colourCodeR=int((i)/(30)*250)
-                            colourCodeG=int((25-i)/(30)*250)
-                            colourCodeB=int((25-i)/(30)*250)
+                            colourCodeR=int((i)/(factor)*250)
+                            colourCodeG=int((factor-i)/(factor)*250)
+                            colourCodeB=int((factor-i)/(factor)*250)
                         if i%6 == 0:
-                            colourCodeR=int((25-i)/(30)*250)
-                            colourCodeG=int((25-i)/(30)*250)
-                            colourCodeB=int((i)/(30)*250)
+                            colourCodeR=int((factor-i)/(factor)*250)
+                            colourCodeG=int((factor-i)/(factor)*250)
+                            colourCodeB=int((i)/(factor)*250)
                         colourCodeH=int(250)
                         colourCodeRGB=(colourCodeR,colourCodeG,colourCodeB,colourCodeH)
-                        print(colourCodeRGB)
+                        #print(colourCodeRGB)
                         layerInfo.update(dict(  colour = colourCodeRGB ))
                     LayerName='SLATS - '+LayerName
                     layerInfo.update(dict(  layername = LayerName,
-                                            layerstyle = "LayerStyles/SLATS"+str(i)+".qml",
+                                            layerstyle = "LayerStyles/SLATS"+str(i+198)+".qml",
                                             geomtype = "MultiPolygon"
                                             ))
                     GrandTotal=self.getNRlayer(RC,GrandTotal,post,layerInfo,context,feedback)

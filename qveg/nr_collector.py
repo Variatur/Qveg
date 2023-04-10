@@ -38,6 +38,7 @@ from qgis.utils import iface
 import re
 import os
 import processing
+
 from PyQt5.QtGui import QIcon, QColor
 import time
 import datetime
@@ -128,7 +129,7 @@ def LoadNaturalResourceLayer(post,layerInfo,context,feedback):
             # Build server query string - objectIds
             sublist = ",".join(map(str,sublist))
             post.update(dict(objectIds = sublist))
-            #print(self.BuildQuery(post,context,feedback))
+            #print(BuildQuery(post,context,feedback))
             #print(post)
             sublistQueryResult = None
             sublistQueryResult = GetGEOJSON(BuildQuery(post,context,feedback),context,feedback)
@@ -155,12 +156,14 @@ def LoadNaturalResourceLayer(post,layerInfo,context,feedback):
                         feedback=feedback)["OUTPUT"]
                     if feedback.isCanceled():
                         return 0
-                #
+                #print("tempLayer feature count = "+str(tempLayer.featureCount()))
+                #print("Search type = "+searchType)
                 if searchType == 'lotplan':
                     clipPolygon = PropertyVlayer
                 elif searchType == 'extentstring':
                     s = ExtentString.split(',')
                     s = s[0]+','+s[2]+','+s[1]+','+s[3]
+                    #print("Extent = "+s)
                     params = {
                         'INPUT' : s,
                         'OUTPUT' : "memory:"
@@ -174,6 +177,13 @@ def LoadNaturalResourceLayer(post,layerInfo,context,feedback):
                         return 0
                 else:
                     return 0
+                #print("clipPolygon CRS = "+str(clipPolygon.crs().authid()))
+                crs = clipPolygon.crs()
+                crs.createFromId(int(standardCRSshort))
+                clipPolygon.setCrs(crs)
+                #print("clipPolygon feature count = "+str(clipPolygon.featureCount()))
+                #print("clipPolygon CRS = "+str(clipPolygon.crs().authid()))
+                #QgsProject.instance().addMapLayer(clipPolygon)
                 #Clip layer to property polygon
                 params = {
                     'INPUT' : tempLayer,
@@ -187,6 +197,7 @@ def LoadNaturalResourceLayer(post,layerInfo,context,feedback):
                     feedback=feedback)["OUTPUT"]
                 if feedback.isCanceled():
                     return 0
+                #print("tempLayer feature count = "+str(tempLayer.featureCount()))
                 #
                 # Merging layer with Master copy if the clipped layer still has features
                 if tempLayer.featureCount() > 0:
@@ -201,21 +212,40 @@ def LoadNaturalResourceLayer(post,layerInfo,context,feedback):
                         feedback=feedback)["OUTPUT"]
                     if feedback.isCanceled():
                         return 0
+                    #print("NRdata feature count = "+str(NRdata.featureCount()))
             feedback.setProgress(25+round(position*bundleSize/objectCount*50))
             position = position + 1
     #check if final NRdata is valid
     if not NRdata.isValid():
         feedback.reportError("Layer failed to load! [code A3]", True)
         return
+    #print("NRdata feature count = "+str(NRdata.featureCount()))
     if NRdata.featureCount() > 0:
         NRdata.setName(layername)
+        #work in progress
+        # apply style
+        properties = {'color': QColor.fromRgb(221,239,196,255), 
+                      'style': 'solid',
+                      'outline_style': 'solid',
+                      'outline_color': 'solid'
+                      }
+        symbol = QgsSymbol.defaultSymbol(NRdata.geometryType())
+        renderer = QgsSingleSymbolRenderer(symbol)
+        symbol_layer = QgsSimpleFillSymbolLayer.create(properties)
+        renderer.symbol().changeSymbolLayer(0, symbol_layer)
+        NRdata.setRenderer(renderer)
+        #work in progress
         #
         #Write layer to file and reload
         TimeString = str(datetime.datetime.now()).replace(':','-').replace(':','-').replace('.','-').replace(' ','-')
         #Save as GeoPackage
-        QgsVectorFileWriter.writeAsVectorFormat(NRdata,outputDIR+"/"+layername+TimeString+".gpkg",'utf-8',QgsCoordinateReferenceSystem(standardCRS))
+        #QgsVectorFileWriter.writeAsVectorFormat(NRdata,outputDIR+"/"+layername+TimeString+".gpkg",'utf-8',QgsCoordinateReferenceSystem(standardCRS))
+        QgsVectorFileWriter.writeAsVectorFormat(NRdata,outputDIR+"/"+layername+TimeString+".gpkg",'utf-8')
+        feedback.setProgressText("Saved as ... "+outputDIR+"/"+layername+TimeString+".gpkg")
+        #
         #Reload layer
         NRdata = QgsVectorLayer(outputDIR+"/"+layername+TimeString+".gpkg",layername,"ogr")
+        #
         if not NRdata.isValid():
             feedback.reportError("Layer failed to load! [code A4]", True)
             return

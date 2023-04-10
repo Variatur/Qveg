@@ -193,6 +193,8 @@ class QvegAlgorithm(QgsProcessingAlgorithm):
         return
     def processAlgorithm(self, parameters, context, feedback):
         # Set the standard CRS to GDA2020 (EPSG:7844)
+        project = QgsProject.instance()
+        projectCRS=project.crs()
         standardCRS = "EPSG:7844"
         #Parse the lot plan numbers
         lots = re.sub('[^0-9a-zA-Z]+', ',', self.parameterAsString(parameters,self.INPUT,context).upper()).split(',')
@@ -226,6 +228,7 @@ class QvegAlgorithm(QgsProcessingAlgorithm):
                             layername = 'Property Boundary',
                             layerstyle = 'LayerStyles/Property.qml',
                             outputDIR = outputDIR,
+                            projectCRS = projectCRS,
                             standardCRS = standardCRS,
                             )
         #Get property polygon(s)
@@ -235,9 +238,9 @@ class QvegAlgorithm(QgsProcessingAlgorithm):
             return {}
         #
         feedback.setProgress(15)
-        feedback.setProgressText("Property polygon(s) loaded")  
+        feedback.setProgressText("Property polygon(s) loaded")
+        #
         # Load property layer to canvas
-        project = QgsProject.instance()
         project.addMapLayer(PropertyVlayer, False)
         layerTree = iface.layerTreeCanvasBridge().rootGroup()
         layerTree.insertChildNode(0, QgsLayerTreeLayer(PropertyVlayer))
@@ -256,6 +259,7 @@ class QvegAlgorithm(QgsProcessingAlgorithm):
                             )
         layerInfo = dict(   vlayer = PropertyVlayer,
                             outputDIR = outputDIR,
+                            projectCRS = projectCRS,
                             standardCRS = standardCRS,
                             searchType = 'lotplan'
                             )
@@ -386,48 +390,54 @@ class QvegAlgorithm(QgsProcessingAlgorithm):
             feedback.setProgress(98)
         if loadSLATS:
                 # Update server details
-                post.update(dict(   service1 = "VegView/", 
-                                    service2 = "SLATS/"
+                post.update(dict(   service2 = "SLATS/"
                                     ))
-                for i in range(1,24):
-                    post.update(dict(serviceNumber = str(i)))
+                for i in range(2,47):   #200-249
+                    if ((i+198) < (47+198)) and (i%2 != 0):
+                        continue
+                    post.update(dict(serviceNumber = str(i+198)))
                     LayerName=json.loads(GetGEOJSON(queryLayerName(post,context,feedback),context,feedback))
-                    DefaultLayerName = str(i)
+                    DefaultLayerName = str(i+198)
                     LayerName=LayerName.get('name',DefaultLayerName)
+                    factor = 50
                     if i%2 == 0:
-                        colourCodeR=int((25-i)/(30)*250)
-                        colourCodeG=int((i)/(30)*250)
-                        colourCodeB=int((i)/(30)*250)
+                        colourCodeR=int((factor-i)/(factor)*250)
+                        colourCodeG=int((i)/(factor)*250)
+                        colourCodeB=int((i)/(factor)*250)
                     else:
-                        colourCodeR=int((i)/(26)*250)
-                        colourCodeG=int((i)/(26)*250)
-                        colourCodeB=int((25-i)/(26)*250)
+                        colourCodeR=int((i)/(factor)*250)
+                        colourCodeG=int((i)/(factor)*250)
+                        colourCodeB=int((factor-i)/(factor)*250)
                     if i%3 == 0:
-                        colourCodeR=int((i)/(30)*250)
-                        colourCodeG=int((25-i)/(30)*250)
-                        colourCodeB=int((i)/(30)*250)
+                        colourCodeR=int((i)/(factor)*250)
+                        colourCodeG=int((factor-i)/(factor)*250)
+                        colourCodeB=int((i)/(factor)*250)
                     if i%4 == 0:
-                        colourCodeR=int((25-i)/(30)*250)
-                        colourCodeG=int((i)/(30)*250)
-                        colourCodeB=int((25-i)/(30)*250)
+                        colourCodeR=int((factor-i)/(factor)*250)
+                        colourCodeG=int((i)/(factor)*250)
+                        colourCodeB=int((factor-i)/(factor)*250)
                     if i%5 == 0:
-                        colourCodeR=int((i)/(30)*250)
-                        colourCodeG=int((25-i)/(30)*250)
-                        colourCodeB=int((25-i)/(30)*250)
+                        colourCodeR=int((i)/(factor)*250)
+                        colourCodeG=int((factor-i)/(factor)*250)
+                        colourCodeB=int((factor-i)/(factor)*250)
                     if i%6 == 0:
-                        colourCodeR=int((25-i)/(30)*250)
-                        colourCodeG=int((25-i)/(30)*250)
-                        colourCodeB=int((i)/(30)*250)
+                        colourCodeR=int((factor-i)/(factor)*250)
+                        colourCodeG=int((factor-i)/(factor)*250)
+                        colourCodeB=int((i)/(factor)*250)
                     colourCodeH=int(250)
                     colourCodeRGB=(colourCodeR,colourCodeG,colourCodeB,colourCodeH)
-                    #print(colourCodeRGB)
+                    #print("colour = ",colourCodeRGB)
                     layerInfo.update(dict(  colour = colourCodeRGB ))
                     LayerName='SLATS - '+LayerName
                     layerInfo.update(dict(  layername = LayerName,
-                                            layerstyle = "LayerStyles/SLATS"+str(i)+".qml",
+                                            layerstyle = "LayerStyles/SLATS"+str(i+198)+".qml",
                                             geomtype = "MultiPolygon"
                                             ))
                     self.getNRlayer(post,layerInfo,context,feedback)
+                    try: 
+                        del layerInfo["colour"]
+                    except KeyError:
+                        pass
         #
         #
         feedback.setProgress(100)
