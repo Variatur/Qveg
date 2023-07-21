@@ -7,6 +7,7 @@
                               -------------------
         begin                : 2020-11-07
         updated              : 2021-04-25
+        updated              : 2023-07-15
         copyright            : (C) 2020 by Otto Pattemore and Gary Pattemore
         email                : pattemore .dot. software .at. gmail .dot. com
  ***************************************************************************/
@@ -90,6 +91,7 @@ def LoadPropertyLayer(layerInfo,context,feedback):
                     outSR = standardCRSshort
                     )
     #print(post.get('objectIds'))
+    print(BuildQuery(post,context,feedback))
     PropertyLayer = QgsVectorLayer(GetGEOJSON(BuildQuery(post,context,feedback),context,feedback), layername, "ogr")
     #Ensure the created layer is valid
     if not PropertyLayer.isValid() or PropertyLayer.featureCount() < 1:

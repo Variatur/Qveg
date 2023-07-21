@@ -9,6 +9,7 @@
                               -------------------
         begin                : 2020-05-06
         updated              : 2021-04-25
+        updated              : 2023-07-15
         copyright            : (C) 2020 by Otto Pattemore and Gary Pattemore
         email                : pattemore .dot. software .at. gmail .dot. com
  ***************************************************************************/
@@ -193,9 +194,9 @@ class QvegAlgorithm(QgsProcessingAlgorithm):
         return
     def processAlgorithm(self, parameters, context, feedback):
         # Set the standard CRS to GDA2020 (EPSG:7844)
+        standardCRS = "EPSG:7844"
         project = QgsProject.instance()
         projectCRS=project.crs()
-        standardCRS = "EPSG:7844"
         #Parse the lot plan numbers
         lots = re.sub('[^0-9a-zA-Z]+', ',', self.parameterAsString(parameters,self.INPUT,context).upper()).split(',')
         #
