@@ -1286,7 +1286,6 @@ def my_form_open(dialog, layer, feature):
 &lt;h4> [% concat( 'Area = ', round($area,2), ' ' , 
 	if (@project_area_units = 'hectares', ' ha', 
 		if(@project_area_units = 'square meters', ' sq. m.', @project_area_units))) %] &lt;/h4>
-&lt;a href="https://play.google.com/store/apps/details?id=com.PattemoreSoftware.qres_flutter" style="color:blue">Get the RE description database for Android&lt;/a>
 &lt;/div>
 </mapTip>
   <layerGeometryType>2</layerGeometryType>

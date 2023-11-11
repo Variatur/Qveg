@@ -6,14 +6,14 @@
 name=Qveg
 qgisMinimumVersion=3.0
 description=This plugin loads Queensland vegetation management data from the Queensland government feature server. Layers can be loaded using property (lot-plan), regional ecosystem, or extent searches. The plugin can also load imagery, basemaps, various informative overlays, and export maps to a georeferenced PDF. A number of vector layers include styling which allows QGIS Actions to generate formatted Google Earth KML files and interogate Queensland government online databases to collect information on Accepted Development Vegetation Clearing Code (ADVCC) and Area Management Plan (AMP) notification history.
-version=5.4
+version=5.5
 author=Otto Pattemore and Gary Pattemore
-email=pattemore.software@gmail.com
+email=variatursoftware@gmail.com
 
 about=Loads and displays data relevant to vegetation regulation in Queensland, Australia. Data is sourced from the Queensland government's public web feature server based on a search of LotPlan number(s). LotPlan numbers uniquely identify individual properties in Queensland, Australia. Information on vegetation regulation in Queensland is available here: https://www.qld.gov.au/environment/land/management/vegetation . It is recommended that users seek advice via the contact information in the above webpage prior to clearing vegetation in Queensland and obtained a vegetation management property report here: https://www.qld.gov.au/environment/land/management/vegetation/maps/map-request
 
-tracker=https://github.com/PattemoreSoftware/Qveg/issues
-repository=https://github.com/PattemoreSoftware/Qveg
+tracker=https://github.com/Variatur/Qgeo/issues
+repository=https://github.com/Variatur/Qveg
 # End of mandatory metadata
 
 # Recommended items:
@@ -21,6 +21,7 @@ repository=https://github.com/PattemoreSoftware/Qveg
 hasProcessingProvider=yes
 # Uncomment the following line and add your changelog:
 changelog=
+            5.5 =   Minor update to QML hover styling and github details and related info.
             5.4 =   Correct issues for non-GDA projections. Fix several bugs in Actions and 
                     remove KML generator Action because this can now done directly in QGIS with correct symbology. 
             5.3 =   Several minor updates
@@ -31,7 +32,7 @@ changelog=
 # Tags are comma separated with spaces allowed
 tags=cadastre,Queensland,Australia,vegetation regulation,tenure,ecosystem,habitat,wetland,koala,waterway,river,ADVCC,AMP,KMZ,KML,PDF,Statewide Landcover and Tree Study,regional ecosystem,basemap
 
-homepage=https://github.com/PattemoreSoftware/Qveg
+homepage=https://github.com/Variatur/Qveg
 category=Analysis
 icon=icon.png
 # experimental flag
